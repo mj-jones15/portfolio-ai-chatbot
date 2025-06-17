@@ -1,0 +1,210 @@
+/* Make sure each section takes up the full viewport height */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Franklin Gothic Medium;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* Section 1: Background image */
+#intro {
+    background: url('./files/images/bilbao.jpeg') no-repeat center center;
+    background-size: cover;
+    font-size: 3rem;
+    color: #202A44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 22vh;
+    height: 100vh;
+}
+
+/* Section 2: Black background */
+#chatbot {
+    background-image: linear-gradient(#000000, #4478A8);
+}
+
+#user-input {
+    width: 100%;
+    flex-grow: 1;
+    max-width: 400px;
+    min-height: 50px;
+    height: 200px; /* taller than default */
+    resize: none; /* disables manual resize */
+    padding: 8px;
+    background-color: #000; /* black background */
+    color: #00bfff; /* blue font */
+    font-family: 'Courier New', monospace; /* matches retro terminal font */
+    font-size: 1rem;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00bfff55;
+}
+
+#sendButton {
+    display: block;
+    margin: 1rem auto 0 auto; /* center below textarea */
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    background-color: #000;
+    color: #00bfff;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Courier New', monospace;
+}
+
+#sendButton:hover {
+  background-color: #00bfff;
+  color: #000;
+}
+
+.ai-response {
+  color: white;
+}
+
+.terminal-window {
+  display: flex;
+  color: white;
+  justify-content: center; /* or flex-end for right */
+  gap: 10px; /* spacing between textarea and button */
+  margin-top: 10px;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  flex-direction: column;
+}
+
+.suggestion {
+    font-family: 'Courier New', monospace;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#chat-history {
+  width: 100%;
+  max-width: 600px;
+  color: white;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+
+/* Section 3: To Blue background and 3 columns */
+#info {
+    background-image: linear-gradient(#4478A8, #000000);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: flex-start; /*align to top*/
+    font-size: 2pc;
+}
+
+.project-item {
+    font-size: 1.5pc;
+    line-height: 1.4;
+    color: #f8f8ff;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-link .project-item {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project-link .project-item:hover {
+    transform: scale(1.02);
+    text-decoration: underline;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    padding-top: 22vh;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Divider line between sections */
+.divider {
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+/* Optional: Add smooth scrolling and scroll snapping */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.resume-thumbnail {
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.resume-thumbnail.hover {
+    transform: scale(1.05);
+}
+
+.column-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #f8f8ff;
+}

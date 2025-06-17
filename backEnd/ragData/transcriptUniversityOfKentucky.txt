@@ -1,0 +1,131 @@
+Education, College, Grades
+
+This is my in-progress transcript from the University of Kentucky. I am currently a junior.
+
+	Matthew Stuart Jones
+--------------------------------------------
+	Undergraduate Academic Record
+
+	2023 Fall Semester
+Program:
+Stanley and Karen Pigman College of Engr
+BS in Computer Science
+Major: Pre-Computer Science
+CRS NUM		COURSE TITLE		GRADE 	HOURS 	QPTS
+EGR 102 	FUNDAMENTALS OF 	
+		ENGINEERING COMPUTING	A 	2.0 	8.00
+CIS 112 	ACCELERATED COMP. AND 		
+		COMM. II (CIS)		A 	3.0 	12.00	
+EGR 101 	ENGINEERING 
+		EXPLORATION I 		A 	1.0 	4.00
+CHE 105 	GENERAL COLLEGE 
+		CHEMISTRY I		A 	4.0 	16.00
+MUC 192		UNIVERSITY 
+		CHORISTERS: 		
+		MEN'S CHORUS		A 	1.0 	4.00
+MA 213 		CALCULUS III 		A 	4.0 	16.00
+
+		AHRS 	EHRS 	QHRS 	QPTS 	GPA
+Semester 	15.0 	15.0 	15.0 	60.00 	4.000
+Cumulative 	41.0 	45.0 	15.0 	60.00 	4.000
+Status 		Dean's List
+
+
+	2024 Spring Semester
+Program:
+Stanley and Karen Pigman College of Engr
+BS in Computer Science
+Major: Pre-Computer Science
+Minor: Mathematics
+Minor: Music Performance
+CRS NUM 	COURSE TITLE 		GRADE 	HOURS 	QPTS
+EGR 103 	ENGINEERING 
+		EXPLORATION II 		A 	2.0 	8.00
+CS 275 		DISCRETE MATHEMATICS 	A 	4.0 	16.00
+CS 215 		INTR TO PGM DESIGN 
+		ABSTRACTION/PROB SOLV	A 	4.0 	16.00
+PHY 241 	GENERAL UNIVERSITY 
+		PHYSICS LABORATORY	A 	1.0 	4.00
+PHY 231 	GENERAL UNIVERSITY 
+		PHYSICS			A 	4.0 	16.00
+MUC 192 	UNIVERSITY CHORISTERS 	A 	1.0 	4.00
+		AHRS 	EHRS 	QHRS 	QPTS 	GPA
+Semester 	16.0 	16.0 	16.0 	64.00 	4.000
+Cumulative 	57.0 	61.0 	31.0 	124.00 	4.000
+Status 		Dean's List
+
+
+	2024 Fall Semester
+Program:
+Stanley and Karen Pigman College of Engr
+BS in Computer Science
+Major: Pre-Computer Science
+Minor: Mathematics
+Minor: Music Performance
+Undergraduate Certificate in Engineering
+Major: Artificial Intelligence
+CRS NUM 	COURSE TITLE 		GRADE	HOURS 	QPTS
+ANT 102 	ARCHAELOGY: MYSTERIES
+		& CONTROVERSIES		A 	3.0 	12.00
+EES 170 	BLUE PLANET: INTRO TO 
+		OCEANOGRAPHY		A 	3.0 	12.00
+CS 216 		INTRO TO SOFTWARE ENGR 
+		TECHNIQUES		A 	3.0 	12.00
+EE 280 		DESIGN OF LOGIC 
+		CIRCUITS 		A 	3.0 	12.00
+STA 381 	ENGR STATS-A CONCEPTUAL 
+		APPROACH		A 	3.0 	12.00
+MUP 102 	VOICE 			A 	2.0 	8.00
+MUC 192 	UNIVERSITY CHORISTERS: 
+		MEN'S CHORUS		A 	1.0 	4.00
+		AHRS 	EHRS 	QHRS 	QPTS 	GPA
+Semester 	18.0 	18.0 	18.0 	72.00 	4.000
+Cumulative 	75.0 	79.0 	49.0 	196.00 	4.000
+Status 		Dean's List
+
+
+	2025 Spring Semester
+Program:
+Stanley and Karen Pigman College of Engr
+BS in Computer Science
+Major: Computer Science
+Minor: Mathematics
+Minor: Music Performance
+Undergraduate Certificate in Engineering
+Major: Artificial Intelligence
+CRS NUM 	COURSE TITLE 		GRADE 	HOURS 	QPTS
+EAP 599 	GLOBAL LEARNING 
+		EXPERIENCE		P 	1.0 	0.00
+			Pass Fail Grade Scale
+		AHRS 	EHRS 	QHRS 	QPTS 	GPA
+Semester 	1.0 	1.0 	0.0 	0.00 	0.000
+Cumulative 	76.0 	80.0 	49.0 	196.00 	4.000
+
+
+	2025 Fall Semester (In Progress)
+CRS NUM 	COURSE TITLE 		GRADE 	HOURS 	QPTS
+MUC 192 	UNIVERSITY CHORISTERS: 
+		MEN'S CHOIR		--- 	1.0 	0.00	
+MA 321 		INTRO NUMERICAL METHODS --- 	3.0 	0.00
+MA 322 		MATRIX ALGEBRA & APPLS 	--- 	3.0 	0.00
+STA 320 	INTRODUCTORY 
+		PROBABILITY		--- 	3.0 	0.00
+CS 270 		SYSTEMS PROGRAMMING 	--- 	3.0 	0.00
+		AHRS 	EHRS 	QHRS 	QPTS 	GPA
+Semester 	13.0 	0.0 0.	0 0.00	 0.000
+Cumulative 	89.0 	80.0 	49.0 	196.00 	4.000
+
+
+AP Credit Awarded - Univ of KY 01/2021 - 12/2021
+HUM GEOG Human Geography 3.00 GEO 172
+US HIS United States History 3.00 HIS 108
+US HIS United States History 3.00 HIS 109
+ENG LANG English Language And Com 3.00 WRD 1---
+PHY 1 Physics 1 3.00 PHY 151
+CALC BC Calculus BC 0.00 MA 113
+	Exclude Earn/Grade: Dupli
+CALC BC Calculus BC 4.00 MA 114
+CALCBCAB Calculus BC,Calculus AB 4.00 MA 113
+SPA LANG Spanish Language 3.00 SPA 210
+Total 26.00
+*** End of Undergraduate Academic Record ***

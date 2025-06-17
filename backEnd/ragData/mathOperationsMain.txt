@@ -1,0 +1,171 @@
+Education, College, CS215, Project, Math-Operations
+#include <iostream>
+#include <string>
+#include "MathOperations.h"
+#include "MathReport.h"
+
+using namespace std;
+
+int main(){ //main function
+    /*
+    Base output that is printed only once, prior to the program running in a loop
+    */
+    cout << "Four basic Math operations are: + - * /" <<endl; 
+    cout << "They are considered to be the cornerstones of Math." << endl;
+    cout << "I am your online math tutor, my name is Matthew Jones. " << endl;
+    cout << "I will help you build skills in Mathematics." << endl;
+    cout << "You will gain confidence by practicing some questions. " << endl;
+
+    MathOperations question;    // the question for user to solve
+    MathReport userReport;  // The user report for using Math Tutor program
+    int op1;                    // The first operand
+    int op2;              // The second operand
+
+    bool concludePracticum = false;     //boolean variable for holding main practice session
+    while(!concludePracticum){ //while loop
+        /*
+        Secondary output that is printed each iteration of the while loop
+        */
+        cout << "\tMath Is Fun! Take  a Challenge..." << endl;
+        cout << "--------------------------------------" << endl;
+        cout << "1. Addition problem\n2. Subtraction problem" << endl;
+        cout <<"3. Multiplication problem\n4. Division problem " << endl;
+        cout <<"5. Quit this program" << endl;
+        cout <<"--------------------------------------" << endl;
+        cout << "Enter your choice (1-5): " << endl;
+        int userInput; //variable for user numerical input
+        cin >> userInput; //read in
+        cin.ignore(256, '\n'); //ignore the rest of the characters after the user's integer input
+        if(cin.fail()){ //check to see validity
+            cin.clear(); //clear if there is a failure tripped
+            cin.ignore(256, '\n'); //ignore again in case of extra input
+            cout << "Please enter a number 1-5!" << endl; //statement telling the user to enter a correct input 
+        }
+        /*
+        if statement to protect against a number outside of 1-5
+        */
+        else if(userInput > 5 || userInput < 1){
+            cout << "Please enter a number 1-5!" << endl;
+        }
+        /*
+        main statement if the user input is correct*/
+        else{
+            if(userInput >= 1 && userInput <= 4){ //an if statement to decide if the user is ending the program or not
+                /*
+                case 1:
+                user input 1. create random numbers for op1 and op2.
+                set the operands to op1 and op2 and question to addition
+                */
+                if(userInput == 1){
+                    op1 = (rand() % 500) + 1;
+                    op2 = (rand() % 500) + 1;
+                    question.setOperands(op1, op2);
+                    question.Addition();
+                }
+                /*
+                case 2:
+                user input 2. create random numbers.
+                create an if statement to ensure the answer is positive.
+                set the question to subtraction
+                */
+                else if(userInput == 2){
+                    op1 = (rand() % 500) + 1;
+                    op2 = (rand() % 500) + 1;
+                    if(op1 > op2){
+                        question.setOperands(op1, op2);
+                    }
+                    else{
+                        question.setOperands(op2, op1);
+                    }
+                    question.Subtraction();
+                }
+                /*
+                case 3:
+                user input 3. set random numbers and question to multiplication
+                */
+                else if(userInput == 3){
+                    op1 = (rand() % 89) + 11;
+                    op2 = (rand() % 8) + 2;
+                    question.setOperands(op1, op2);
+                    question.Multiplication();
+                }
+                /*
+                case 4:
+                user input 4.
+                set random number for op2, and set op1 as a multiple of op2.
+                set operands and question to division.
+                */
+                else if(userInput == 4){
+                    op2 = (rand() % 8) + 2;
+                    int multiplier = (rand() % 98) + 2;
+                    op1 = op2 * multiplier;
+                    question.setOperands(op1, op2);
+                    question.Division();
+                }
+                /*
+                post set-up of question, this code is ran
+                */
+                int studentAnswer; //int to hold user input
+                studentAnswer = question.collectUserAnswer(); //collect the answer
+                /*
+                check correctness using pre-defined functions.
+                if it is correct,
+                output that it is the correct answer
+                */
+                if (question.checkAnswer(studentAnswer)){
+                    cout << "Congratulations! " << studentAnswer << " is the right answer." << endl;
+                }
+                /*
+                similar logic for the incorrect answer*/
+                else{
+                    cout << "Sorry, the answer is wrong. You may practice again." << endl;
+                }
+                userReport.insert(question, studentAnswer); //add the question to the userReport
+                cout << endl << endl; //clear some space before moving onto the next question or userReport
+            }
+            /*
+            if the user input is 5, then it is the end program/userReport screen*/
+            else if(userInput == 5){
+                concludePracticum = true; //signal to end the main while loop
+                if(userReport.getNumOfCorrectAnswers() == 0){ //if the user answered all questions correct, there is no extra practice
+                    userReport.generateReport(true); //output the report and end program
+                }
+                else{ //if the user has incorrect answers, signal for extra practice
+                    userReport.generateReport(false); //create a report WITHOUT the correct answers shown
+                    bool concludeExtraPracticum = false; //boolean for if the user wants more practice
+                    while(!concludeExtraPracticum){ //while they still want more practice
+                        /*
+                        Base output for each iteration of the secondary practice loop
+                        */
+                        cout << "Would you like to practice the questions with wrong answers? Enter y to practice." << endl;
+                        cout << "Enter \"q\" or \"Q\" to quit" << endl;
+                        string extraUserInput; //a string for whether they want more practice
+                        cin >> extraUserInput; //read in that string
+                        /*
+                        validate the user input with the same logic as used above
+                        */
+                        if(cin.fail()){
+                            cin.clear();
+                            cin.ignore(256, '\n');
+                            cout << "Please enter q or y." << endl;
+                        }
+                        /*
+                        if the user wants more practice, then the needMorePractice function is called
+                        */
+                        else if(extraUserInput == "y" || extraUserInput == "Y"){
+                            userReport.needMorePractice();
+                        }
+                        /*
+                        if they don't want more practice, then the secondary for loop is ended
+                        */
+                        else if(extraUserInput == "q" ||extraUserInput == "Q"){
+                            concludeExtraPracticum = true;
+                        }
+                    }
+                    userReport.generateReport(true); //generate a report with the correct answers at the end of extra practice
+                }
+            }
+        }
+    }
+    return 0; //end program
+}

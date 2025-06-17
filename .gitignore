@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.env
+.venv/
+venv/
+ENV/
+
+# Environment variables
+*.env
+.env.*
+
+# Python egg metadata
+*.egg-info/
+dist/
+build/
+
+# VS Code and other editor folders
+.vscode/
+.idea/
+*.swp
+
+# Node modules (if using npm for frontend)
+node_modules/
+
+# Frontend build artifacts
+*.log
+.DS_Store
+*.sqlite3
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Render-specific
+*.db
+*.log
+
+# Chroma or other local DBs
+chroma_db/
+db/
+vector_store/

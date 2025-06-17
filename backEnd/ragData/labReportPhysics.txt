@@ -1,0 +1,184 @@
+Education, College, Physics-231, Labs
+
+This is an example lab report from my physics class at the University of Kentucky.
+
+Lab # 7: Calcula,ng Spring Constants with Uncertain,es
+Researcher: Sam Jordan
+Coder: Noah Cunningham-O’Donnell
+Notetaker: Ma=hew Jones
+Introduc)on: Sam Jordan (R)
+The purpose of this experiment was to see which method or equa;on (CBR, equa;on 2, or
+equa;on 5) yields the least amount of systema;c uncertainty. This was determined by
+examining which method or equa;on provides the most consistent k constant value. Systema;c
+uncertainty refers to a type of uncertainty that arises from ﬂaws in the experimental design,
+equipment, or procedures used. This diﬀers from random uncertainty in a way that does not
+include human error. Mul;ple methods and equa;ons were used in order to eliminate
+systema;c uncertainty. Based on our ﬁndings, equa;on 51 provided the most consistent results
+by carrying out numerous trials, thus leading us to believe that equa;on 5 eliminates the most
+amount of systema;c uncertainty.
+
+1 RECEARCHER 1:
+
+Equation 4 = 𝑥𝑠𝑖𝑛𝑒(𝑡) = 𝑎𝑚𝑝𝑙𝑖𝑡𝑢𝑑𝑒 sin(2𝜋 𝑓𝑟𝑒𝑞𝑢𝑒𝑛𝑐𝑦 𝑡 + 𝑝ℎ𝑎𝑠𝑒) + 𝑜𝑓𝑓𝑠𝑒𝑡
+Second derivative of equation 4 = −4𝜋^2∗frequency^2∗amplitude∗sin(2𝜋∗frequency∗t+phase)
+Solving for N =N[amplitude∗sin(2𝜋∗frequency∗t+phase)] =
+−4𝜋^2∗frequency^2∗amplitude∗sin(2𝜋∗frequency∗t+phase)
+N = −4𝜋^2∗frequency^2
+
+𝑎𝑐𝑐𝑒𝑟𝑒𝑟𝑎𝑡𝑖𝑜𝑛𝑒𝑞5 = 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛𝑑𝑒𝑟𝑖𝑣𝑎𝑡𝑖𝑣𝑒 = 𝑁 (𝑥𝑠𝑖𝑛𝑒(𝑡) − 𝑜𝑓𝑓𝑠𝑒𝑡)
+
+Procedure: MaKhew Jones (Notetaker)
+To calculate k for our spring, we can derive its value the following equa;ons.
+6 𝐹 = 𝑚𝑎 , 𝑚𝑎 = 0
+6 𝐹 = 𝐹+ − 𝐹,
+𝐹+ = 𝐹,
+𝐹+ = 𝑘𝑥 (𝐻𝑜𝑜𝑘𝑒𝑠 𝐿𝑎𝑤), 𝐹, = 𝑚𝑔
+𝑘𝑥 = 𝑚𝑔
+𝑚𝑔
+𝑘=
+∆𝑥
+These equa;ons eventually yield 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛, ∙ 𝑚𝑎𝑠𝑠 on the ver;cal axis and
+𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛 on the horizontal axis. Unfortunately, the CBR can’t tell us ∆𝑥 automa;cally, but
+simply by graphing 𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛 on the horizontal axis, the slope is the calculated k value.
+The main challenge that we worked to solve was elimina;ng the systema;c uncertainty
+that the CBR gave us when using its data to calculate k. To solve this, we started by calcula;ng
+our own velocity values based oﬀ the CBR’s posi;on values over ;me. We used the equa;on,
+∆.
+𝑣 = ∆/ , to solve this. We encountered an issue with aligning the calculated veloci;es with their
+corresponding t values, as the calculated veloci;es are somewhere in between the two t values
+used to calculate them. To work around this, we used x and t values on either side of one
+speciﬁc t value, and assigned the calculated v to the speciﬁc t. With the same methodology, we
+∆0
+calculated accelera;on, 𝑎 = ∆/ , with these veloci;es, and created the graph, 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛123 ,
+pictured below as Figure 1. This calculated k value was 22.8, which was more accurate, but s;ll
+contained a large systema;c error (the spring’s manufacturer stated k value is 25 ± 10%).
+Then, we were given a sine curve,
+𝑥+451 (𝑡) = 𝑎𝑚𝑝𝑙𝑖𝑡𝑢𝑑𝑒 ∙ sin(2𝜋 ∙ 𝑓𝑟𝑒𝑞𝑢𝑒𝑛𝑐𝑦 ∙ 𝑡 + 𝑝ℎ𝑎𝑠𝑒) + 𝑜𝑓𝑓𝑠𝑒𝑡, to ﬁt our data to.
+This would allow us to ﬁt a graph to the accelera;on values the CBR was returning, elimina;ng
+the rough parts of the CBR’s accelera;on graph. However, we needed this equa;on to calculate
+accelera;on, not posi;on, so we took two deriva;ves of it, to yield 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛126 (𝑡) =
+−4 ∙ 𝜋 3 ∙ 𝑓𝑟𝑒𝑞𝑢𝑒𝑛𝑐𝑦 3 ∙ 𝑎𝑚𝑝𝑙𝑖𝑡𝑢𝑑𝑒 ∙ sin(2𝜋 ∙ 𝑓𝑟𝑒𝑞𝑢𝑒𝑛𝑐𝑦 ∙ 𝑡 + 𝑝ℎ𝑎𝑠𝑒) + 𝑜𝑓𝑓𝑠𝑒𝑡. Upon
+graphing this equa;on, the data returned a k value of 24.57. (Figure 3), the most accurate that
+we had seen. Nevertheless, we needed to take many data samples to ensure that we were
+certain which equa;on 𝐶𝐵𝑅7 𝑠 𝑐𝑎𝑙𝑐𝑢𝑙𝑎𝑡𝑒𝑑 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛, 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛123 , 𝑜𝑟 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛126 - was in fact the most
+accurate and precise. To do this, we took ﬁve samples of control data to calculate the standard
+devia;ons of every graphing method. These standard devia;ons would be the control group
+random uncertainty. We also wanted to see if changing seZngs on the CBR would induce a
+change in the random uncertainty. This would tell us which had the least systema;c uncertainty,
+because if the random uncertainty didn’t change through the adjustment of experiment
+seZngs, then it was more accurate. As seen in Figure 5, the calculated k values from the CBR
+and 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛123 have a much larger systema;c uncertainty throughout the various trials,
+whereas 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛126 stays consistent throughout the varying trials. This means that
+𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛126 is in fact the most accurate and precise.
+
+Figure 1, K calculated from 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛!"# 2
+
+Figure 2, CBR accelera2on vs 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛!"# over 2me
+
+2 NOTETAKER 1: Figures 1 and 3 are the graphs that calculate k values based on the
+
+different methods, and Figures 2 and 4 show the slight differences in the accelerations
+that lead to different calculated k values. Figure 4 specifically shows how
+𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛!"# fits itself to eliminate the random uncertainty by removing rough peaks and
+valleys.
+
+Figure 3, K calculated from 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛!"$
+
+Figure 4, CBR accelera2on vs 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛!"# and 𝑎𝑐𝑐𝑒𝑙𝑒𝑟𝑎𝑡𝑖𝑜𝑛!"$
+
+Figure 5, Calculated K through various trials of varying sample rates
+
+Analysis: Noah Cunningham-O'Donnell (C)
+
+The summary of relevant results from our lab can be seen in this data table below which
+displays the CBR Equa;on 2 and Equa;on 5 calculated k values at diﬀerent sample rates.
+Calculated K values vs Sample rate
+
+This chart helps show how the diﬀerent methods of calcula;ng the k value change based on
+sample rate. This trend can be more easily seen in the graph of this below
+
+This chart helps between show the diﬀerence between the methods of calcula;ng k values. The
+blue line shows the CB calculated k values which has a very high standard devia;on of about +/5.259 as the values vary greatly as the sample rate changes. These values appears to be more
+accurate as the sample rate increases. The yellow line represents equa;on 2s calculated k
+values based on sample rate. These values also have a large standard devia;on of about +/2.902 however it varies less than that of the CBR calculated k value but follows a very similar
+trend to the CBR values as they both appear to become more accurate as the sample rate
+increases. The green lines displays the equa;on 5 calculated k values which have a signiﬁcantly
+
+lower standard devia;on of about +/-0.178. These values appear to vary much less and remain
+around the same value despite sample rate as these values do not follow the same trend as
+equa;on 2 and CBR calculated k values These equa;on 5 K values appear to niot vary based on
+sample rate and appear to be the overall most accurate as they have a very low standard
+devia;on.
+Some relevant code that helped produce these values and graphs was that the CBR data was
+plugged into the code and the CBR k value was calculated using the code below
+
+This set of code above essen;ally directly takes the posi;on and accelera;on data collected by
+the CBR and plots a graph with x values as posi;on and y values as accelera;on ;mes mass
+which gives a slope that equals the k value. This slope was taken for each set of data and used
+above in the analysis of the CBR Calculated k value.
+
+This next set of code above was used to calculate the equa;on 2 K value. This code also uses the
+method of ploZng the posi;on as x values and accelera;on ;mes mass as the y values and
+takes the slope as the k value. However the diﬀerence here is that the ﬁrst couple lines of code
+recalculated the accelera;on by calcula;ng the accelera;on through the change in velocity
+instead of directly by the CBRs data. This was used to calculate the equa;on 2 k values for the
+data above.
+
+This code was used to calculate the equa;on 5 k value. This code also uses the method of
+ploZng the posi;on as x values and accelera;on ;mes mass as the y values and takes the slope
+as the k value. However it recalculated the accelera;on by essen;ally ﬁZng a sine func;on top
+the accelera;on data made from equa;on 2 this essen;ally aKempted to ﬁll in gaps of the data
+as inn theory the accelera;on should be periodic and follow a nice sine func;on however based
+oﬀ systema;c error the data might not show this. This code and equa;on essen;ally try to the
+ﬁll the gaps and show what ideally the accelera;on should have been based on the data we
+had. This method was used to calculate the k value for the equa;on 5 calculated k values above
+Conclusion: Sam Jordan (R)
+Figure one consists of CBR original data, which is how posi;on changes over ;me, as well as the
+data calculated from equa;on 2, which is how accelera;on changes over ;me. The data that
+was retrieved from the CBR machine was neither precise nor accurate, which led us to calculate
+further data using equa;on 2. The k constant value can be determined by using the slope of the
+trendline in ﬁgure one, which is 22.80. Because the CBR data does not provide a consistent k
+constant value, it can be said that there is systema;c error present, due to the fact that there is
+an assumed 20% error with the CBR machine. While equa;on 2 provides a more precise and
+more accurate k constant value, it does not eliminate the greatest percentage of systema;c
+error. PUT IN NUMBERS
+Figure two compares both the calculated CBR accelera;on and the calculated equa;on 2
+accelera;on. The given k constant value for the spring is 25, +- 10%. When looking at the graph
+in ﬁgure two, it can be seen that the amplitude of the calculated CBR accelera;on wave is less
+than the amplitude of the calculated equa;on 2 accelera;on. Our average k constant value
+based on the CBR machine is 19.197 and our average k constant value based on equa;on 2 is
+22.808. Because the value from equa;on 2 is closer to the given 25, this proves that it is more
+accurate and precise than the CBR machine.
+Because there was s;ll room for greater accuracy, equa;on 5 was created and tested in order to
+determine if the data provided from equa;on 5 trials proved to be more accurate and more
+precise than the rest of the data. Figure three consists of the CBR machine data and the
+calculated equa;on 5 data, which is also accelera;on changing over ;me. The graph in ﬁgure
+three compares the posi;on calculated from the cbr to the accelera;on x mass calculated from
+equa;on 5. The k constant value can be determined from the slope of the trendline, which is
+24.57. This shows us that equa;on 5 provides the closest k constant value to the given 25,
+which would lead us to believe that equa;on 5 eliminates the greatest amount of systema;c
+error.
+
+Figure four compares the waves of all three procedures, CBR machine, equa;on 2, and equa;on
+5. When looking at this graph, it can be seen that the wave for equa;on 5 is the smoothest and
+does not contain any spikes. It holds a constant interval on the y-axis. Comparing this wave to
+the equa;on 2 wave (orange), the wave for equa;on 2 contains numerous spikes throughout.
+Because of this, we are led to believe that this provides the most consistent set of numbers for
+the k constant value, the average being 24.575.
+When looking at ﬁgure ﬁve, it can be seen that all three trendlines agree with the data because
+they pass through the provided error bars. This graph contains the calculated k constant value
+for the CBR machine, equa;on2, and equa;on 5. The standard devia;on and k constant value
+for the CBR machine is 19.196 +/- 5.260. The standard devia;on and k constant value for
+equa;on 2 is 22.808 +/- 2.902. The standard devia;on and k constant value for equa;on 5 is
+24.575 +/- 0.178. Based on all of these values, with the standard devia;on for equa;on 5 being
+the lowest and smallest number and closest k constant value to 25, it can be said that equa;on
+5 provides the most accurate and precise way of acquiring the k constant value.
+To conclude, based on all ﬁve of our graphs and our calculated k constant values, equa;on 5
+yields the least amount of systema;c error. By changing the sampling time of the CBR, the CBR
+calculated K changes drastically compared to equation 5. This is because equation 5 takes
+away more of the systematic uncertainty automatically, so an adjustment in sampling time
+doesn't induce a larger random uncertainty. Equation 2 is a mix of the CBR and equation 5,
+because its K changes less over time, but still does change according to the increased sampling
+time. Our final K value is calculated based off equation 5 and the control data group: 25.101 +/0.078 for the red spring.
+
+

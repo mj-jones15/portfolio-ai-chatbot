@@ -1,0 +1,57 @@
+Education, High-School, Grades
+High School Transcript
+
+Cumulative GPA (Weighted): 4.733
+Cumulative GPA (Unweighted): 3.927
+
+Grade 9
+Course				Grade (term 1, term 2)
+Honors Biology		A, A
+Choir				A, A
+Honors English		B+, A-
+Honors Geometry		A, A
+Spanish 2			A, A
+Video and Animation 
+and Digital Media 
+Arts				A, A
+
+
+Grade 10
+Course				Grade (term 1, term 2)
+Accelerated 
+Chemistry			A-, A-
+Algebra 2 pre-Calc	A-, A-
+AP Human Geography	A, A-
+Choir				A, A
+Honors English 2	A, A-
+Spanish 3			A, A
+
+
+Grade 11
+Course				Grade (term 1, term2)
+AP Language and 
+Composition			A, A
+AP Physics 1		A-, A-
+AP US History		A-, B
+Choir				A+, A
+Spanish 4			A, A-
+Trig Calculus A		A-, B
+
+
+Grade 12
+Course				Grade (term 1, term 2)
+AP Calculus BC		B, A-
+AP Computer 
+Science A (Java)	A, A
+AP Literature 
+and Composition		A, A
+AP Spanish
+Language and 
+Culture				A-, A
+Government,
+Economics			A, A
+
+	State Seals
+Attained the State Seal of Biliteracy by
+demonstrating high proficiency in English and
+Spanish (05/22/2023)

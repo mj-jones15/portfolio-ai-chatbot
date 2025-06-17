@@ -1,0 +1,68 @@
+Education, College, Classes
+
+These are the classes I am taking during my four years at the University of Kentucky. 
+I am currently a junior in my fall semester.
+Classes that should be pointed out will have the word (important) next to them
+
+Freshman year
+fall semester:
+1. Fundamentals of Engineering Computing
+2. Accelerated Composition and Communication II
+3. Engineering Exploration I
+4. General College Chemistry I
+5. Calculus 3 
+6. Men's Choir
+spring semester:
+1. Engineering Exploration II
+2. Discrete Mathematics (important)
+3. Intro to program design, abstraction, and problem solving
+4. General University Physics I
+5. General Univeristy Physics I Lab
+6. Men's Choir
+
+Sophomore year
+fall semester:
+1. Archaeology: Myths and Mysteries
+2. Blue Planet: Introduction to Oceanography 
+3. Intro to Software Engineering Techniques 
+4. Design of Logic Circuits 
+5. Engineering Statistics 
+6. Voice Studio
+7. Men's Choir
+spring semester (Spain):
+1. Algorithms 
+2. Basque Culture and Language
+3. Culture, Politics, and Economy in Contemporary Spanish Society
+4. Spanish through Gastronomy
+
+Junior year
+fall semester:
+1. Systems Programming 
+2. Introductory Probability (important)
+3. Matrix Algebra 
+4. Intro to Numerical Methods 
+5. Men's Choir
+6. Voice Studio
+spring semester:
+1. Machine Learning (important)
+2. Intro to Computer Networking
+3. Models of Computation 
+4. Computer Ethics (important)
+5. Men's Choir
+6. Voice Studio
+
+Senior year
+fall semester:
+1. Intro to Artificial Intelligence (important)
+2. Software Engineering for Senior Project
+3. Introduction to Database Systems 
+4. Theory for Non-Music Majors
+5. Men's Choir
+6. Voice Studio
+spring semester:
+1. Mathematical Introduction to Deep Learning (important)
+2. Senior Design Project
+3. History of Music I
+4. A Global Dynamics Course
+5. Men's Choir
+6. Voice Studio

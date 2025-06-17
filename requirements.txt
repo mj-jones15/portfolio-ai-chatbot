@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+chromadb
+llama-index
+sentence-transformers
+huggingface-hub
+transformers
+aiohttp  # if llama-index needs it for API calls
+httpx    # sometimes used with FastAPI + LLMs
+llama-index-llms-ollama
+llama-index-vector-stores

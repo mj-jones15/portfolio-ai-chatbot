@@ -1,0 +1,4 @@
+Education, College, CS215, Project, Math-Operations
+Math Operations C++ Project
+
+This was my final project for my freshman year CS class at the University of Kentucky. It is a math tutor that will test the user on the four basic operations.

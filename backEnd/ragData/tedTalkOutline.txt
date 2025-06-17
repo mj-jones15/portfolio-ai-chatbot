@@ -1,0 +1,160 @@
+Education, College, Communication-and-Composition, Project, Ted-Talk
+
+This is the outline for a speech I gave in my freshman year comm and comp class at the University of Kentucky.
+
+Speech Preparation Outline
+NAME: Matthew Jones
+Title of Speech: Elementary Education in the Age of Artificial Intelligence
+Introduction
+I.
+
+Attention Catcher:
+
+If I say the two words, “Artificial Intelligence,” I suspect there will be a few different reactions.
+Some of us might be fearful of the future, some of us excited, but I suspect all of us will feel one
+thing, and that is apprehensiveness.
+
+II.
+
+Listener Relevance Link (establish a connection with your audience):
+
+There are so many unknowns about what all this new world of AI going to entail, but
+something that can sometimes be left behind is education. Now, we all have talked about how AI
+will allow people in school to cheat, but what about the other way around. How do educate our
+youth about AI, not in the sense of warning them of the consequences of academic dishonesty but
+preparing them for their life in the way schools are supposed to. With AI and its writing abilities,
+do we completely scrap teaching children how to write essays to our youth? Do we bother
+teaching little grammar and punctuation rules that any writing software can easily fix? In my
+eyes, the answer is not a yes or no, rather a combination of forward thinking that involves
+traditional education at its roots.
+
+III.
+
+Speaker Credibility (explain why you’re qualified to talk about this topic):
+
+Earlier this semester, I had the privilege of listening to a presentation by a Dr. Bill HartDavidson, a researcher on AI and professor of culture and rhetoric at Michigan State. I am
+fascinated by the future of AI in all fields, and Dr. Davidson gave some valuable insight into the
+future of AI in K-12 education.
+IV.
+
+Thesis Statement:
+
+I will delve deeper into the roots of the ideas that I am proposing throughout this
+presentation, however, the groundwork of my proposal lies in this. By focusing more time on
+teaching AI literacy in a holistic manner and less on irrelevant grammatical intricacies of the past,
+children will be better equipped to handle the interactions they have with AI later in their
+education as well as throughout their adult life.
+V.
+
+Preview (what you are going to talk about during your speech):
+
+I will provide a brief background on what AI literacy is, and then I will describe and identify the
+pros and cons of the possible outcomes of certain education decisions.
+
+Transition:
+Now, AI literacy isn’t just the understanding of how to ask Chat-GPT or any large language model
+(or LLM) for more information, rather, AI literacy is the understanding of what it is doing to curate
+your answer.
+Body
+I.
+
+Basics of AI Literacy.
+
+A. The first key idea in AI literacy is understanding how these LLM’s curate and
+produce their information.
+1. As I learned from Dr. Davidson, as the LLM forms your answer, the model makes
+guesses as to what the next word should be, and then a transformer stems the words together:
+2. So much is unknown about where these guesses come from, specifically what texts
+are fed to the model to help it learn:
+B. In an article by MIT Open Learning, it describes how the modeled human intuition of
+AI that is built off statistics can lead students to make misdirected assumptions about work
+produced by AI. This can lead students to have misconceptions about what they are submitting,
+further proving how AI literacy is necessary in the classroom.
+
+Transition:
+All of this goes to show how important it is for AI literacy education to be rapidly implemented
+into our K-12 education system, because without it, students have no idea as to what they are
+really submitting when they turn in an essay written by Chat-GPT. So, with this, how are we
+supposed to introduce children to AI?
+II.
+As one would expect, Stanford University is leading this charge, already deep into the
+trials of their new CRAFT program.
+A. An initiative between four different departments of the University alongside 10 high
+school educators in varying subjects, from different schools.:
+1. CRAFT is implementing new strategies for teaching AI in all subjects. Because
+time in high school is so limited with the amount of work we expect high schoolers to do,
+CRAFT focuses on implementing it into tasks that are essential for learning.
+2. Since the program is newly developed and still well underway, information about
+their trials in the classroom is limited, however examples of their work that have been released
+range from watching how AI models react to hearing music to AI case studies in economics and
+government:
+
+B. However, implementing AI literacy education isn’t as easy as Stanford may make it
+seem:
+1. In a study published in the International Journal of STEM Education in May of
+this year, researchers looked at different strategies used worldwide to start
+introducing AI to our youth. During this process, they noticed a couple key
+challenges that were the biggest hurdles for educators to figure out:
+A. The first and hardest issue was that most AI training initiatives lack education
+on the key areas of AI. These being understanding AI concepts and techniques,
+understanding how to effectively use AI, and lastly, understanding how AI
+impacts our lives.
+B. The second issue for educators to solve was that AI is constantly changing,
+and identifying the best way for educators to teach it while it evolves at an
+exponential rate is quite difficult.
+2. Ultimately, this is why Stanford’s work is so impressive to me. Against the odds of AI,
+they have begun the arduous work of creating these opportunities for students.
+
+Transition:
+However, they aren’t the only ones who have made progress in the field.
+III.
+Globally and in the United States, more discoveries have been made as this issue makes
+its way to the forefront.
+A. Astonishingly, the United States is well ahead of all over countries in the world when
+it comes to AI Education:
+1. In the same study published in the International Journal of STEM Education,
+researchers identified that the US has published more than double the amount of research in AI
+Literacy than our closest competitor, China. Being primarily made up of conference papers and
+research articles, this is an invaluable area of study for professionals to be investing in:
+B. Fortunately, because there is this much information that has been published, this
+research study was able to draw a few definitive conclusions:
+1. First, as I stated earlier, because of the innate inter-disciplinary aspect of AI, there
+is no need to introduce a new subject to students solely with the focus of AI. Like what Stanford
+is implementing, the best strategy is to utilize new AI techniques inside experiments and learning
+that students are already doing:
+2. Something that I haven’t mentioned yet that this study did identify though, was
+that a focus on teacher’s competence for AI needs to be started. If we are to help our next
+generation with the battles they will face throughout their life, we need to start teaching and
+preparing our teachers for these lessons now:
+
+Transition:
+These advancements in the field simply confirm the claim that AI literacy needs to become a part
+of everyday education.
+
+Conclusion
+I.
+Furthermore, as evidenced by research in the field, its not time to turn away from all
+traditional education, rather extend upon what we already teach our kids while including
+important messages about AI.:
+II.
+
+Summary of Main Points:
+
+For me, it really all comes down to the massive amount of research that is being put out into the
+public eye, proving that students need to have AI literacy to succeed in school and their careers.
+II.
+
+Clincher/Call to Action:
+Just like we heard a couple weeks ago with the gubernatorial election, education is a
+huge issue for voters here in Kentucky and nationally. So I encourage you, the next time
+a politician or school board administrator starts talking about implementing AI literacy
+into their educational goals, really give it a listen, and support it, because our next
+generation needs all the help they can get, battling with AI and all its implications.
+
+Links for information:
+https://people.cal.msu.edu/hartdav2/
+https://openlearning.mit.edu/news/ai-literacy-explained
+https://hai.stanford.edu/news/bringing-ai-literacy-high-schools
+https://stemeducationjournal.springeropen.com/articles/10.1186/s40594-023-00418-7
+
+

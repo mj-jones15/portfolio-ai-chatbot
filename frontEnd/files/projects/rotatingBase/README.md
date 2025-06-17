@@ -1,0 +1,2 @@
+# Rotating Base Project
+This project was the main assignment of my freshman design class, EGR 103. With a team, we designed a pipette dispenser to be ran with a GUI (coded in Matlab) that could be used as lab equipment. My subsystem was the rotating base, which I designed with a 3D printed base and a laser-cut piece of wood as the platform. A servo motor was set in the base and rotated the platform. 
