@@ -119,7 +119,7 @@ query_engine = index.as_query_engine()
 app = FastAPI()
 
 origins = [
-    "http://127.0.0.1:5500",  # adjust this to your frontend URL
+    "https://matthewjones-ukcs.onrender.com",  # adjust this to your frontend URL
 ]
 
 app.add_middleware(
