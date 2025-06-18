@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew S. Jones | Portfolio</title>
+
+    <link rel="stylesheet" href="webpage.css" />
+</head>
+<body>
+    <section id="intro" class="section">
+        <div class="intro-text">
+        <h1>Matthew Stuart Jones</h1>
+        <br><br><br><br>
+        <h2 class="subtitle">Computer Science Student at the University of Kentucky</h2>
+    </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="chatbot" class="section">
+        <div class="terminal-window">
+            <div id="suggestion-box" class="suggestion"></div>
+            <textarea id="user-input" placeholder="Ask me anything about myself!"></textarea>
+            <br>
+            <button id="sendButton" onclick="sendMessage()">Send</button>
+            <div id="chat-history"></div>
+            <div id="loading-indicator" style="display:none; color: #00bfff; font-family: 'Courier New', monospace; margin-top: 10px;">Thinking...</div>
+        </div>
+    </section>
+    <script>
+         const suggestions = [
+            "Try asking about my resume.",
+            "What are your post-undergrad goals?",
+            "What projects are you most proud of?",
+            "Ask about my study abroad.",
+            "What is your collegiate GPA?",
+            "What makes you a good computer scientist?",
+            "Tell me about your research experience.",
+        ];
+
+        let currentSuggestion = 0;
+        const suggestionBox = document.getElementById("suggestion-box");
+
+        function rotateSuggestion() {
+            suggestionBox.textContent = suggestions[currentSuggestion];
+            currentSuggestion = (currentSuggestion + 1) % suggestions.length;
+        }
+
+        // Start the suggestion rotation
+        rotateSuggestion(); // show first immediately
+        setInterval(rotateSuggestion, 4000); // every 4 seconds
+
+
+        async function sendMessage() {
+            const input = document.getElementById("user-input").value;
+            if (!input.trim()) return;
+
+            // Show loading indicator
+            document.getElementById("loading-indicator").style.display = "block";
+
+            try {
+                //const response = await fetch("https://fastapi-backend.onrender.com/chat", {
+                const response = await fetch("http://localhost:8000/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ query: input })
+                });
+
+                const data = await response.json();
+
+                document.getElementById("chat-history").innerHTML +=
+                    `<p class="ai-response"><strong>You:</strong> ${input}</p>
+                    <p class="ai-response"><strong>AI:</strong> ${data.response}</p>`;
+
+                document.getElementById("user-input").value = "";
+            } catch (error) {
+                console.error("Chatbot error:", error);
+                document.getElementById("chat-history").innerHTML +=
+                    `<p class="ai-response"><strong>Error:</strong> Failed to get a response from the chatbot.</p>`;
+            } finally {
+                // Hide loading indicator
+                document.getElementById("loading-indicator").style.display = "none";
+            }
+        }
+
+    </script>
+
+    <div class="divider"></div>
+
+    <section id="info" class="section">
+        <div class="info-wrapper">
+            <div class="column">
+                <div class="column-title">Projects</div>
+                <a href="https://github.com/mj-jones15/pastProjects/tree/main/autocompleteMe" target="_blank" class="project-link">
+                    <div class="project-item">
+                        <br><br>
+                        University of Kentucky CS216 Final Project: Autocomplete words (C++)
+                    </div>
+                </a>
+                <a href="https://github.com/mj-jones15/pastProjects/tree/main/mathOperations" target="_blank" class="project-link">
+                    <div class="project-item">
+                        <br><br>
+                        University of Kentucky CS215 Final Project: Math Operations (C++)
+                    </div>
+                </a>
+                <a href="https://github.com/mj-jones15/pastProjects/tree/main/rotatingBase" target="_blank" class="project-link">
+                    <div class="project-item">
+                        <br><br>
+                        University of Kentucky EGR103 Final Project:
+                        Pipette Dispenser (Rotating Base subsystem)
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <div class="column-title">Resume</div>
+                <br><br>
+                <a href="./files/pdfs/Resume.pdf" target="_blank">
+                    <img
+                        src="./files/images/ResumeThumbnail.jpg"
+                        class="resume-thumbnail"
+                    />
+                </a>
+            </div>
+            <div class="column">
+                <div class="column-title">Contact</div>
+                <a href="https://www.linkedin.com/in/matthew-jones-34449b260/" target="_blank" class="project-link">
+                    <div class="project-item">
+                        <br><br>
+                        LinkedIn Profile
+                    </div>
+                </a>
+                <div class="project-item">
+                    <br><br><br>
+                    Email: mstuartj@icloud.com
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
