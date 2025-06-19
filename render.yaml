@@ -9,7 +9,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.10
       - key: PORT
-        10000
+        value: 10000
     autoDeploy: true
     rootDir: backEnd
 
