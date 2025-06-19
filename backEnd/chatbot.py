@@ -129,15 +129,6 @@ app.add_middleware(
     allow_headers=["*"],  
 )
 
-
-
-
-# Base route for health check
-@app.get("/")
-def read_root():
-    return {"message": "Hello from FastAPI"}
-
-# Post route for chat
 class UserQuery(BaseModel):
     query: str
 
@@ -149,11 +140,5 @@ async def chat(query: UserQuery):
     response = get_rag_response(query.query)
     return {"response": str(response)}
 
-
-# Run if local on Render
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.environ.get("PORT", 10000))
-    uvicorn.run("chatbot:app", host="0.0.0.0", port=port, reload=False)
 
 
