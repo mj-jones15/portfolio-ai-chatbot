@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 import chromadb
+import psutil
 import os
 from chromadb.utils import embedding_functions
 from llama_index.core import VectorStoreIndex, StorageContext, Document, Settings
@@ -12,7 +13,6 @@ from llama_index.llms.ollama import Ollama
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from sentence_transformers import SentenceTransformer
-
 
 model_name = "all-mpnet-base-v2"
 model = SentenceTransformer(model_name)
@@ -85,6 +85,11 @@ collection.add(
     metadatas = metadatas,
     ids = ids
 )
+process = psutil.Process(os.getpid())
+mem_mb = process.memory_info().rss / 1024 / 1024
+print(f"[DEBUG] Memory used after indexing: {mem_mb:.2f} MB")
+
+
 
 #Convert ChromaDB to VectorStore
 vector_store = ChromaVectorStore(chroma_collection=collection)
@@ -138,6 +143,13 @@ class UserQuery(BaseModel):
 async def chat(query: UserQuery):
     print(f"Recieved query: {query.query}")
     response = get_rag_response(query.query)
+
+    # Track memory usage
+    process = psutil.Process(os.getpid())
+    memory_used_mb = process.memory_info().rss / 1024 / 1024
+    print(f"[DEBUG] Memory usage: {memory_used_mb:.2f} MB")
+
+
     return {"response": str(response)}
 
 
