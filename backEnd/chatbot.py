@@ -21,11 +21,13 @@ if __name__ == "__main__":
 
 model_name = "all-mpnet-base-v2"
 
+model = SentenceTransformer(model_name)
+
 
 #Custom embedding function with the loaded model
 class chosenEmbeddingFunction(embedding_functions.EmbeddingFunction):
     def __call__(self, texts):
-        return model.encode(texts, convert_to_tensor=True).tolist() # type: ignore
+        return model.encode(texts, convert_to_tensor=True).tolist() 
 
 
 # Some LlamaIndex versions return an Response object instead of a plain string
@@ -43,8 +45,6 @@ query_engine = None
 
 def load_vector_index():
     global index, query_engine
-
-    model = SentenceTransformer(model_name)
 
     if query_engine is not None:
         return
