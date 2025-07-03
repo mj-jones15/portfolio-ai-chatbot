@@ -60,7 +60,7 @@
             document.getElementById("loading-indicator").style.display = "block";
 
             try {
-                const response = await fetch("https://matthewjones-portfolio-backend.onrender.com", {
+                const response = await fetch("matthew-backend-production.up.railway.app/chat", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ query: input })

@@ -136,7 +136,7 @@ def load_vector_index():
 app = FastAPI()
 
 origins = [
-    "https://matthewjones-ukcs.onrender.com",  # adjust this to your frontend URL
+    "https://portfolio-frontend-enf4.onrender.com",  # adjust this to your frontend URL
 ]
 
 app.add_middleware(
