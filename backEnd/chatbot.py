@@ -20,7 +20,7 @@ if __name__ == "__main__":
     uvicorn.run("chatbot:app", host="0.0.0.0", port=port)
 
 model_name = "all-mpnet-base-v2"
-model = SentenceTransformer(model_name)
+
 
 #Custom embedding function with the loaded model
 class chosenEmbeddingFunction(embedding_functions.EmbeddingFunction):
@@ -43,6 +43,8 @@ query_engine = None
 
 def load_vector_index():
     global index, query_engine
+
+    model = SentenceTransformer(model_name)
 
     if query_engine is not None:
         return
