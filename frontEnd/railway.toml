@@ -1,0 +1,3 @@
+[build]
+root = "frontEnd"
+publish = "."
