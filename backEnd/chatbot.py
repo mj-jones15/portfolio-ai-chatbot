@@ -25,7 +25,7 @@ model_name = "all-mpnet-base-v2"
 #Custom embedding function with the loaded model
 class chosenEmbeddingFunction(embedding_functions.EmbeddingFunction):
     def __call__(self, texts):
-        return model.encode(texts, convert_to_tensor=True).tolist()
+        return model.encode(texts, convert_to_tensor=True).tolist() # type: ignore
 
 
 # Some LlamaIndex versions return an Response object instead of a plain string
