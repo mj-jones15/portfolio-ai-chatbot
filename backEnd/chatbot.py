@@ -37,92 +37,98 @@ def get_rag_response(user_input: str):
     return response.response if hasattr(response, "response") else str(response)
 
 
+# Define global variables
+index = None
+query_engine = None
 
-#ChromaDB Client
-embedding_function = chosenEmbeddingFunction()
+def load_vector_index():
+    global index, query_engine
 
-#Create instance of client class 
-client = chromadb.Client()
+    if query_engine is not None:
+        return
 
-#Create new collection by calling client method
-name = "filesAboutMyself"
-collection = client.get_or_create_collection(name=name, embedding_function=embedding_function)
+    #ChromaDB Client
+    embedding_function = chosenEmbeddingFunction()
 
+    #Create instance of client class 
+    client = chromadb.Client()
 
-#Safety: clear all old documents from collection
-collection.delete(where={"title": {"$ne": ""}})
+    #Create new collection by calling client method
+    name = "filesAboutMyself"
+    collection = client.get_or_create_collection(name=name, embedding_function=embedding_function)
 
-#In case an exact deletion is required
-# collection.delete(where={"title": "resume.txt"})
-# path to the folder with files
-dataDir = "./ragData"
+    #Safety: clear all old documents from collection
+    collection.delete(where={"title": {"$ne": ""}})
 
-#prepare lists to add to ChromaDB
-documents = []
-metadatas = []
-ids = []
+    #In case an exact deletion is required
+    # collection.delete(where={"title": "resume.txt"})
+    # path to the folder with files
+    dataDir = "./ragData"
 
-#Loop through documents in dataDir folder. Reads first line as the metadatas
-for filename in os.listdir(dataDir):
-    if filename.endswith(".txt"):
-        filepath = os.path.join(dataDir, filename)
-        with open(filepath, "r", encoding = "utf-8") as f:
-            lines = f.readlines()
-            if len(lines) < 2:
-                print(f"Skipping {filename} — not enough lines")
-                continue
+    #prepare lists to add to ChromaDB
+    documents = []
+    metadatas = []
+    ids = []
 
-            #first line is metadata
-            keywords = [keyword.strip() for keyword in lines[0].split(",")]
-            content = "".join(lines[1:]).strip()
+    #Loop through documents in dataDir folder. Reads first line as the metadatas
+    for filename in os.listdir(dataDir):
+        if filename.endswith(".txt"):
+            filepath = os.path.join(dataDir, filename)
+            with open(filepath, "r", encoding = "utf-8") as f:
+                lines = f.readlines()
+                if len(lines) < 2:
+                    print(f"Skipping {filename} — not enough lines")
+                    continue
 
-            documents.append(content)
-            metadatas.append({
-                "title": filename,
-                "keywords": ", ".join(keywords)  # convert list to a single comma-separated string
-            })
-            ids.append(filename)  # FIXED: assign ID per file
+                #first line is metadata
+                keywords = [keyword.strip() for keyword in lines[0].split(",")]
+                content = "".join(lines[1:]).strip()
 
-
-#Function adds items to collection, documents are added with metadata
-collection.add(
-    documents = documents,
-    metadatas = metadatas,
-    ids = ids
-)
-process = psutil.Process(os.getpid())
-mem_mb = process.memory_info().rss / 1024 / 1024
-print(f"[DEBUG] Memory used after indexing: {mem_mb:.2f} MB")
+                documents.append(content)
+                metadatas.append({
+                    "title": filename,
+                    "keywords": ", ".join(keywords)  # convert list to a single comma-separated string
+                })
+                ids.append(filename)  # FIXED: assign ID per file
 
 
+    #Function adds items to collection, documents are added with metadata
+    collection.add(
+        documents = documents,
+        metadatas = metadatas,
+        ids = ids
+    )
+    process = psutil.Process(os.getpid())
+    mem_mb = process.memory_info().rss / 1024 / 1024
+    print(f"[DEBUG] Memory used after indexing: {mem_mb:.2f} MB")
 
-#Convert ChromaDB to VectorStore
-vector_store = ChromaVectorStore(chroma_collection=collection)
+    #Convert ChromaDB to VectorStore
+    vector_store = ChromaVectorStore(chroma_collection=collection)
 
-#Wrap vector store in storage context
-storage_context = StorageContext.from_defaults(vector_store=vector_store)
+    #Wrap vector store in storage context
+    storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
-Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
+    Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 
-#Llama3 model
-modelName = "llama3"
-Settings.llm = Ollama(modelName, request_timeout=360.0)
+    #Llama3 model
+    modelName = "llama3"
+    Settings.llm = Ollama(modelName, request_timeout=360.0)
 
-# Create Document objects from the loaded documents and metadata
-doc_objects = [
-    Document(text=doc_text, metadata=metadata)
-    for doc_text, metadata in zip(documents, metadatas)
-]
+    # Create Document objects from the loaded documents and metadata
+    doc_objects = [
+        Document(text=doc_text, metadata=metadata)
+        for doc_text, metadata in zip(documents, metadatas)
+    ]
 
-# Build the vector index
-index = VectorStoreIndex.from_documents(
-    documents=doc_objects,
-    storage_context=storage_context,
-)
+    # Build the vector index
+    index = VectorStoreIndex.from_documents(
+        documents=doc_objects,
+        storage_context=storage_context,
+    )
 
+    #Query engine
+    query_engine = index.as_query_engine()
 
-#Query engine
-query_engine = index.as_query_engine()
 
 #Set up port
 app = FastAPI()
@@ -142,7 +148,9 @@ app.add_middleware(
 class UserQuery(BaseModel):
     query: str
 
-
+@app.on_event("startup")
+async def startup_event():
+    load_vector_index()
 
 @app.post("/chat")
 async def chat(query: UserQuery):
@@ -156,6 +164,3 @@ async def chat(query: UserQuery):
 
 
     return {"response": str(response)}
-
-
-
