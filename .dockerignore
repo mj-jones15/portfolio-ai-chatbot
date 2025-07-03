@@ -1,0 +1,14 @@
+# Prevent unnecessary build context bloat
+__pycache__/
+*.pyc
+*.pkl
+*.pt
+*.bin
+*.log
+*.cache/
+.DS_Store
+.env
+node_modules/
+
+# Optional: don't include ragData at build time
+# ragData/
