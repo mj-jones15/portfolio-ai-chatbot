@@ -7,6 +7,7 @@ llama-index
 sentence-transformers
 huggingface-hub
 transformers
+psutil
 aiohttp  # if llama-index needs it for API calls
 httpx    # sometimes used with FastAPI + LLMs
 llama-index-llms-ollama
