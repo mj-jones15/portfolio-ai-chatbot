@@ -45,7 +45,7 @@
     flex-grow: 1;
     max-width: 400px;
     min-height: 50px;
-    height: 200px; /* taller than default */
+    height: 130px; /* taller than default */
     resize: none; /* disables manual resize */
     padding: 8px;
     background-color: #000; /* black background */
