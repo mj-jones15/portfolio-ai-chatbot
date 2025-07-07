@@ -104,7 +104,7 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 
 # Mistral via Together API
 Settings.llm = TogetherLLM(
-    model="mistralai/Mistral-7B-Instruct-v0.1",
+    model="mistralai/Mixtral-8x7B-Instruct-v0.1",
     api_key=os.environ["TOGETHER_API_KEY"],
 )
 
