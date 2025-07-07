@@ -131,9 +131,6 @@ origins = [
     "https://portfolio-frontend-enf4.onrender.com",  # adjust this to your frontend URL
 ]
 
-@app.get("/")
-def read_root():
-    return {"message": "Hello from Fast API"}
 
 app.add_middleware(
     CORSMiddleware,
@@ -146,6 +143,9 @@ app.add_middleware(
 class UserQuery(BaseModel):
     query: str
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Fast API"}
 
 @app.post("/chat")
 async def chat(query: UserQuery):
