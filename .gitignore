@@ -8,6 +8,7 @@ __pycache__/
 .venv/
 venv/
 ENV/
+rag-env/
 
 # Environment variables
 *.env

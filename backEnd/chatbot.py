@@ -9,7 +9,7 @@ import psutil
 import os
 from chromadb.utils import embedding_functions
 from llama_index.core import VectorStoreIndex, StorageContext, Document, Settings
-from llama_index.llms.ollama import Ollama
+from llama_index.llms.together import TogetherLLM
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from sentence_transformers import SentenceTransformer
@@ -106,9 +106,11 @@ storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
 Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 
-#Llama3 model
-modelName = "llama3"
-Settings.llm = Ollama(modelName, request_timeout=360.0)
+# Mistral via Together API
+Settings.llm = TogetherLLM(
+    model="mistralai/Mistral-7B-Instruct-v0.1",
+    api_key=os.environ["TOGETHER_API_KEY"],
+)
 
 # Create Document objects from the loaded documents and metadata
 doc_objects = [

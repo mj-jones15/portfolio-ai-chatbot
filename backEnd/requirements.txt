@@ -22,3 +22,5 @@ llama-index-multi-modal-llms-openai
 llama-index-program-openai
 llama-index-question-gen-openai
 llama-index-readers-file
+llama-index-llms-together
+together
