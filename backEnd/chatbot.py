@@ -14,10 +14,6 @@ from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from sentence_transformers import SentenceTransformer
 
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.environ.get("PORT", 10000))
-    uvicorn.run("chatbot:app", host="0.0.0.0", port=port)
 
 model_name = "all-mpnet-base-v2"
 
@@ -135,6 +131,10 @@ origins = [
     "https://portfolio-frontend-enf4.onrender.com",  # adjust this to your frontend URL
 ]
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Fast API"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  
@@ -156,6 +156,4 @@ async def chat(query: UserQuery):
     process = psutil.Process(os.getpid())
     memory_used_mb = process.memory_info().rss / 1024 / 1024
     print(f"[DEBUG] Memory usage: {memory_used_mb:.2f} MB")
-
-
     return {"response": str(response)}
