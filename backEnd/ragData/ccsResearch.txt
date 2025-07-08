@@ -1,0 +1,6 @@
+College, Research
+As an AI Researcher with the University of Kentucky’s Center for Computational Sciences, I’ve had the opportunity to contribute to a project funded by an ACCESS grant through the National Science Foundation (NSF). ACCESS (Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support) is a nationwide initiative that provides researchers across the U.S. with access to high-performance computing and data resources.
+
+At the University of Kentucky, we are part of a “Support” grant team focused on improving the accessibility and usability of these systems. Our team developed a question-answering (Q&A) chatbot trained on hundreds of technical documents to assist researchers more efficiently. We are now building a second-generation chatbot powered by novel, previously untapped data sources, designed to answer complex, proposal-related questions with greater precision and depth.
+
+Through this experience, I’ve developed a strong understanding of retrieval-augmented generation (RAG) systems. I’ve worked extensively with tools such as Ollama, ChromaDB, and Hugging Face, gaining hands-on experience with embedding models, metadata design, and efficient vector storage. This project has given me both technical insight and a deep appreciation for the role that thoughtful data structuring and retrieval play in building effective AI systems.
