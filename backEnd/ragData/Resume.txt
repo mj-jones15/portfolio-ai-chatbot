@@ -33,7 +33,7 @@ CORE QUALIFICATIONS
   o Arduino-Based Rotating Platform: Built a motorized platform with integrated hardware and software.  
   o Website Creation: Designed and deployed a responsive website using modern web technologies.  
 
-PROFESSIONAL DEVELOPMENT  
+PROFESSIONAL DEVELOPMENT - These are conferences I have attended. I have not presented my research anywhere.
 • UK AI/ML Research Symposium                                                         March 2024, November 2024  
 • UK Commonwealth Computational Sciences Summit on AI                                October 2023  
 
