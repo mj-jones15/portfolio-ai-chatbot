@@ -1,56 +1,54 @@
 About-me, Resume
-Matthew Jones
-matthew.stuart.jones@icloud.com | LinkedIn: linkedin.com/in/matthew-jones-34449b260
+Matthew Jones  
 
-CAREER OBJECTIVE
-As a Computer Science undergraduate student at the University of Kentucky, I am deeply passionate about artificial intelligence and the legislation surrounding it. I am eager to leverage my knowledge and skills through summer internships and work opportunities that align with a company's mission and contribute to meaningful advancements in AI. 
-Beyond internships, I am seeking a Ph.D. in AI with a focus on AI public policy and ethics.
+CAREER OBJECTIVE  
+As a Computer Science undergraduate student at the University of Kentucky, I am deeply passionate about artificial  
+intelligence and the legislation surrounding it. I am eager to leverage my knowledge and skills through internships and  
+summer research opportunities in the public policy of AI and emerging technologies.  
 
-EDUCATION
-	University of Kentucky, Lexington, Kentucky				(4.0 GPA) Projected Graduation, May 2027
-• Major: Computer Science, 79 Credit Hours Complete				4 Semesters High Honor Roll
-• Minors: Mathematics and Vocal Performance
-• Artificial Intelligence Certificate
-• Study Abroad Semester in Bilbao, Spain (Universidad de Deusto)
-	Collegiate Activities
-• Social Media Chair, acoUstiKats
-• Member, UK Men’s Chorus
-• Treasurer, Tau Beta Pi
+EDUCATION  
+University of Kentucky, Lexington, Kentucky                                    (4.0 GPA)      Projected Graduation, May 2027  
+• Major: Computer Science, 79 Credit Hours Complete                           2 Semesters High Honor Roll Dean’s List  
+• Minors: Mathematics and Vocal Performance  
+• Artificial Intelligence Certificate  
+• Study Abroad Experience in Bilbao, Spain (Universidad de Deusto)  
 
-	William Fremd High School, Palatine, Illinois						(4.733/3.927 GPA) 2019-2023
-High School Activities
-• Cross Country: All-Conference Varsity Captain; IHSA Scholastic Achievement Award
-• Track & Field: IHSA State Qualifier, 4x800M & 4x400M Relays
-• Choir: Two-time ILMEA District VII Qualifier
+Collegiate Activities  
+• Social media leader, acoUstiKats a cappella  
+• Treasurer, Tau Beta Pi  
+• UK Men’s Chorus  
 
-CORE QUALIFICATIONS
-• Programming Languages: C++, Python, R, JavaScript, HTML, CSS
-• Software & Tools: MATLAB, Verilog, Linux, Microsoft Office
-• Projects:
-	o RAG AI: Designed a Retrieval-Augmented Generation model with varying embedding models and LLMs.
-	o C++ Query Auto-completing Program: Developed a predictive text tool to improve user experience.
-	o Arduino-Based Rotating Platform: Built a motorized platform with integrated hardware and software.
-	o Website Creation: Designed and deployed a responsive website using modern web technologies.
+William Fremd High School, Palatine, Illinois                                  (4.733/3.927 GPA)         2019–2023  
+High School Activities  
+• Cross Country: All-Conference Varsity Captain; IHSA Scholastic Achievement Award  
+• Track & Field: IHSA State Qualifier, 4x800M & 4x400M Relays  
+• Choir: Two-time ILMEA District VII Qualifier  
 
+CORE QUALIFICATIONS  
+• Programming Languages: C++, Python, R, JavaScript, HTML, CSS  
+• Software & Tools: MATLAB, Verilog, Linux, Microsoft Office  
+• Projects:  
+  o RAG AI: Frequent experience designing RAG models with advanced document re-ranking.  
+  o C++ Query Auto-completing Program: Developed a predictive text tool to improve user experience.  
+  o Arduino-Based Rotating Platform: Built a motorized platform with integrated hardware and software.  
+  o Website Creation: Designed and deployed a responsive website using modern web technologies.  
 
-PROFFESSIONAL DEVELOPMENT
-• UK AI/ML Research Symposium								March 2024, November 2024
-• UK Commonwealth Computational Sciences Summit on AI					October 2023
+PROFESSIONAL DEVELOPMENT  
+• UK AI/ML Research Symposium                                                         March 2024, November 2024  
+• UK Commonwealth Computational Sciences Summit on AI                                October 2023  
 
+WORK EXPERIENCE  
+AI Researcher for ACCESS, UK Center for Computational Sciences (CCS)               October 2024 – Present  
+• Developed and deployed a RAG model to assist users in drafting allocation requests based on past proposals  
+• Improved existing AI models through document verification and retraining  
 
-WORK EXPERIENCE
-AI Researcher, University of Kentucky Center for Computational Sciences			October 2024 - Present
-• Conduct research on emerging AI tools and methodologies
-• Collaborate with faculty in the CS department and other disciplines to develop and optimize RAG AI models
+Lavner Education Summer Teacher Intern, British International School Chicago        Summer 2024  
+• Excited students with fun and fascinating STEM facts  
+• Prepared and taught lessons on subjects ranging from STEM in Medicine to C++  
 
-Lavner Education Summer Teacher Intern, British International School Chicago		Summer 2024
-• Excited students with fun and fascinating STEM facts
-• Prepared and taught lessons on subjects ranging from STEM in Medicine to C++
+YMCA Sports Camp Counselor, Buehler YMCA, Palatine, Illinois                 Summer 2022 and Summer 2023  
+• Established rules and regulations to ensure camper safety  
+• Helped campers enjoy learning sports by being an exciting leader and ensuring safety  
 
-YMCA Sports Camp Counselor, Buehler YMCA, Palatine, Illinois				Summer 2022 and Summer 2023
-• Established rules and regulations to ensure camper safety
-• Helped campers enjoy learning sports by being an exciting leader and ensuring safety
-
-Attractions Host, Legoland Discovery Center, Schaumburg, Illinois			Summer 2021
-
-• Enhanced guest experience through interpersonal communication using English and Spanish
+Attractions Host, Legoland Discovery Center, Schaumburg, Illinois                     Summer 2021  
+• Enhanced guest experience through interpersonal communication using English and Spanish  
