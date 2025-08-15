@@ -28,9 +28,12 @@ High School Activities
 • Choir: Two-time ILMEA District VII Qualifier  
 
 CORE QUALIFICATIONS  
-•	Programming & Development: Proficient in full-stack web development (HTML, CSS, JavaScript) and Python for machine learning and AI; experienced with C++ and R.
-•	Projects: Retrieval-Augmented Generation (RAG) AI models, predictive text tools in C++, Arduino hardware integration, and responsive website deployment.
-•	Other Skills: Study abroad in Spain (conversational Spanish), public speaking, and team leadership in academic and extracurricular settings.
+• Programming & Development: Proficient in Python for machine learning & AI, SQL for data querying and
+preprocessing, and full-stack web development (JavaScript, HTML, CSS); experienced with C++ and R.
+• Projects: Retrieval-Augmented Generation (RAG) AI models, predictive text tools in C++, Arduino hardware
+integration, and responsive website deployment.
+• Communication and Collaboration: Public speaking, technical presentations, and team leadership in academic
+and extracurricular settings; cross-cultural experience from study abroad in Spain (conversational Spanish).
 
 PROFESSIONAL DEVELOPMENT - These are conferences I have attended. I have not presented my research anywhere.
 • UK AI/ML Research Symposium                                                         March 2024, November 2024  
