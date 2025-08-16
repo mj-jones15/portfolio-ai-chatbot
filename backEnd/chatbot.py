@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import chromadb
 import psutil
 import os
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, Text, DateTime, func
 from chromadb.utils import embedding_functions
 from llama_index.core import VectorStoreIndex, StorageContext, Document, Settings
 from llama_index.llms.together import TogetherLLM
@@ -18,6 +19,34 @@ from sentence_transformers import SentenceTransformer
 model_name = "all-mpnet-base-v2"
 
 model = SentenceTransformer(model_name)
+
+# --- Query logging DB (Postgres via SQLAlchemy) ---
+# Use DATABASE_URL from env (Railway). Fallback to local SQLite when running locally.
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///queries_local.db")
+
+# Railway sometimes exposes URLs like postgres://... ; SQLAlchemy expects postgresql+psycopg2://
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+psycopg2://", 1)
+
+_engine_kwargs = {"pool_pre_ping": True}
+if DATABASE_URL.startswith("sqlite"):
+    _engine_kwargs["connect_args"] = {"check_same_thread": False}
+
+db_engine = create_engine(DATABASE_URL, **_engine_kwargs)
+db_metadata = MetaData()
+
+query_logs = Table(
+    "query_logs",
+    db_metadata,
+    Column("id", Integer, primary_key=True),
+    Column("query", Text, nullable=False),
+    Column("response", Text, nullable=False),
+    Column("timestamp", DateTime(timezone=True), server_default=func.now(), nullable=False),
+)
+
+# Create the table if it doesn't exist
+with db_engine.begin() as _conn:
+    db_metadata.create_all(_conn)
 
 
 #Custom embedding function with the loaded model
@@ -156,4 +185,16 @@ async def chat(query: UserQuery):
     process = psutil.Process(os.getpid())
     memory_used_mb = process.memory_info().rss / 1024 / 1024
     print(f"[DEBUG] Memory usage: {memory_used_mb:.2f} MB")
+
+        # Persist query + response to the DB
+    try:
+        with db_engine.begin() as conn:
+            conn.execute(
+                query_logs.insert().values(
+                    query=query.query,
+                    response=str(response),
+                )
+            )
+    except Exception as e:
+        print(f"[WARN] Failed to log query: {e}")
     return {"response": str(response)}

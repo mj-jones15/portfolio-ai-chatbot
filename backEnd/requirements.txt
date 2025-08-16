@@ -24,3 +24,5 @@ llama-index-question-gen-openai
 llama-index-readers-file
 llama-index-llms-together
 together
+SQLAlchemy>=2.0
+psycopg2-binary>=2.9
