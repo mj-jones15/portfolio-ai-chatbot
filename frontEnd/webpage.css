@@ -208,3 +208,18 @@ body {
     text-align: center;
     color: #f8f8ff;
 }
+
+@media (max-width: 768px) {
+    .info-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 100%;
+        max-width: 500px;
+    }
+    #info {
+        height: auto;       /* let it expand */
+        min-height: 100vh;  /* still at least fill the screen */
+    }
+}
