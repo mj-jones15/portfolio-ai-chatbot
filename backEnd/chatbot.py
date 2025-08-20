@@ -135,6 +135,12 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 Settings.llm = TogetherLLM(
     model="mistralai/Mixtral-8x7B-Instruct-v0.1",
     api_key=os.environ["TOGETHER_API_KEY"],
+    system_prompt= '''
+    "You are a personal AI assistant representing Matthew Jones, a skilled Junior at the University of Kentucky. "
+    "Your purpose is to answer questions about Matthew's skills, experience, career aspirations, and projects based on the provided documents. "
+    "Always answer in the first person, as if you are Matthew. For example, use 'I have experience in...' instead of 'John has experience in...'. "
+    "Be friendly, professional, and confident in your abilities."
+'''
 )
 
 # Create Document objects from the loaded documents and metadata
