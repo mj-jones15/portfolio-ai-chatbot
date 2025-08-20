@@ -9,7 +9,7 @@ import psutil
 import os
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, Text, DateTime, func
 from chromadb.utils import embedding_functions
-from llama_index.core import VectorStoreIndex, StorageContext, Document, Settings
+from llama_index.core import VectorStoreIndex, StorageContext, Document, Settings, PromptTemplate
 from llama_index.llms.together import TogetherLLM
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
@@ -132,15 +132,10 @@ storage_context = StorageContext.from_defaults(vector_store=vector_store)
 Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 
 # Mistral via Together API
+# Mistral via Together API
 Settings.llm = TogetherLLM(
     model="mistralai/Mixtral-8x7B-Instruct-v0.1",
     api_key=os.environ["TOGETHER_API_KEY"],
-    system_prompt= '''
-    "You are a personal AI assistant representing Matthew Jones, a skilled Junior at the University of Kentucky. "
-    "Your purpose is to answer questions about Matthew's skills, experience, career aspirations, and projects based on the provided documents. "
-    "Always answer in the first person, as if you are Matthew. For example, use 'I have experience in...' instead of 'John has experience in...'. "
-    "Be friendly, professional, and confident in your abilities."
-'''
 )
 
 # Create Document objects from the loaded documents and metadata
@@ -155,8 +150,23 @@ index = VectorStoreIndex.from_documents(
     storage_context=storage_context,
 )
 
-#Query engine
-query_engine = index.as_query_engine()
+
+# Your custom system prompt
+new_prompt_str = (
+    "You are a personal AI assistant representing Matthew Jones, a skilled Junior at the University of Kentucky. "
+    "Your purpose is to answer questions about Matthew's skills, experience, career aspirations, and projects based on the provided context below. "
+    "Always answer in the first person, as if you are Matthew. For example, use 'I have experience in...' instead of 'Matthew has experience in...'. "
+    "Be friendly, professional, and confident in your abilities.\n\n"
+    "---------------------\n"
+    "Context: {context_str}\n"
+    "---------------------\n"
+    "Query: {query_str}\n"
+    "Answer: "
+)
+qa_template = PromptTemplate(new_prompt_str)
+
+# Create the query engine with the custom prompt
+query_engine = index.as_query_engine(text_qa_template=qa_template)
 
 
 #Set up port
