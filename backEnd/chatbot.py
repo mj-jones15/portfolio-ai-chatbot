@@ -17,13 +17,13 @@ from sentence_transformers import SentenceTransformer
 
 
 model = None
-model_name = None
+model_name = "all-mpnet-base-v2"
 
 def get_embedding_model():
     global model
     if model is None:
-        model = SentenceTransformer("all-mpnet-base-v2")
-        model_name = "all-mpnet-base-v2"
+        print("[INFO] Loading embedding model...")
+        model = SentenceTransformer(model_name)
     return model
 
 
@@ -59,7 +59,8 @@ with db_engine.begin() as _conn:
 #Custom embedding function with the loaded model
 class chosenEmbeddingFunction(embedding_functions.EmbeddingFunction):
     def __call__(self, texts):
-        return model.encode(texts, convert_to_tensor=True).tolist() 
+        embedding_model = get_embedding_model()
+        return embedding_model.encode(texts, convert_to_tensor=True).tolist()
 
 
 # Some LlamaIndex versions return an Response object instead of a plain string
