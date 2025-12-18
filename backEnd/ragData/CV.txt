@@ -1,0 +1,73 @@
+About-Me, CV, Education, Graduate-School
+
+Matthew Stuart Jones
+847-431-7231 | matthew.stuart,jones@icloud.com | Portfolio Website
+EDUCATION
+Bachelor of Science, Computer Science • University of Kentucky - Projected Graduation, May 2027
+• Minors: Mathematics and Vocal Performance
+• Artificial Intelligence Certificate
+• Study Abroad Experience in Bilbao, Spain (Universidad de Deusto)
+(4.0 GPA) 
+RESEARCH EXPERIENCE
+Independent Study with Dr. Brent Harrison • Human Centered AI, AI Ethics - Upcoming, Spring 2026
+AI Researcher for ACCESS,
+UK Center for Computational Sciences (CCS) October 2024 – Present (Including Summer 2025)
+• MCP categorizer to select a specific AI Agent based on the user’s query
+• RAG model to assist users in drafting allocation abstracts and proposals based on past submissions
+• LLM based tagging algorithm to categorize proposals based on their abstracts
+• Improved existing AI models through document verification and retraining
+INVITED TALKS
+Fall 2025
+• HON 251: Technology and the Human Experience (Honors) Guest Lecturer: “A Brief Overview of AI Policy”,
+CONFERENCES
+• “UK NSF Regional AI Workshop” – Lexington, Kentucky - October 7, 2025 • “UK AI/ML Research Symposium” – Lexington, Kentucky - March 28, 2024, November 12, 2024 • “UK Commonwealth Computational Sciences Summit on AI” – Lexington, Kentucky - October 17, 2023
+SKILLS
+• AI/ML Development: Hands on experience with OpenAI, Ollama, and open source LLMs.
+• Mathematical Foundation: Strong theoretical background in algorithms, linear algebra, probability, and
+numerical methods, with upcoming training in deep learning and models of computation.
+• Programming & Systems: Proficient in Python for machine learning & AI (NumPy, pandas), SQL, and full-
+stack web development (JavaScript, HTML, CSS); proficient with C, C++, Linux, and R.
+• Applications: RAG and MCP AI models with advanced document reranking and multi-LLM tournament
+schemes, predictive text tools in C++, Arduino hardware, and responsive website deployment.
+• Communication and Collaboration: Public speaking, technical presentations, and team leadership in academic
+and extracurricular settings; cross-cultural experience from study abroad in Spain (conversational Spanish).
+RELEVANT COURSEWORK
+• CS 315: Algorithms
+• CS 270: Systems Programming
+• PPL 306: Ethics and Civic Leadership – revolved around AI Public Policy
+• MA 322: Matrix Algebra and Its Applications
+• MA 321: Intro to Numerical Methods
+• MA 320: Introductory Probability
+-- Spring 2026 Featured Coursework --
+• CS 485: Data Ethics
+• CS 575: Models of Computation
+HONORS AND AWARDS
+• Dean’s List – 5 Semesters
+• Pigman College of Engineering Marky Campbell Scholarship
+• UK Bluegrass Spirit Scholarship
+• UK Education Abroad Scholarship
+PROFESSIONAL ORGANIZATIONS
+• Kentucky Alpha Chapter of Tau Beta Pi
+ORGANIZATIONS AND INVOLVMENT
+• acoUstiKats a cappella group – Social Media Manager
+• Tau Beta Pi – Treasurer
+• UK Men’s Chorus – Section Leader
+REFERENCES
+• Dr. Jim Griffieon, University of Kentucky
+a. Director of UK Center for Computational Sciences
+b. Phone: (859) 257-6746
+c. Email: griff@netlab.uky.edu
+• Dr. Bruce Walcott, University of Kentucky
+a. Tau Beta Pi Faculty Advisor
+b. Email: bruce.walcott@uky.edu
+• Dr. Cory Curl, University of Kentucky
+a. Director of Undergraduate Studies, Martin School of Public Policy
+b. Phone: (859) 562-3182
+c. Email: cory.curl@uky.edu
+• Dr. Brent Harrison, University of Kentucky
+a. Director of Undergraduate Studies, Pigman College of Engineering Computer Science
+b. Phone: (859) 257-8040
+c. Email: brent.harrison@uky.edu
+• Dr. Joe Martin, University of Kentucky
+a. Senior Lecturer, School of Information Science
+b. Email: joe.martin@uky.edu
