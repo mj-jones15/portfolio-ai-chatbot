@@ -2,27 +2,27 @@ fastapi
 uvicorn
 pydantic
 python-dotenv
+
+# Vector DB
 chromadb
-llama-index
+
+# LlamaIndex (ONLY what you use)
+llama-index-core
+llama-index-vector-stores-chroma
+llama-index-embeddings-huggingface
+llama-index-llms-together
+
+# Embeddings
 sentence-transformers
 huggingface-hub
 transformers
+
+# System utils
 psutil
-aiohttp  # if llama-index needs it for API calls
-httpx    # sometimes used with FastAPI + LLMs
-llama-index-llms-ollama
-llama-index-vector-stores-chroma
-llama-index-core
-llama-index-embeddings-huggingface
-llama-index-embeddings-openai
-llama-index-indices-managed-llama-cloud
-llama-index-llms-ollama
-llama-index-llms-openai
-llama-index-multi-modal-llms-openai
-llama-index-program-openai
-llama-index-question-gen-openai
-llama-index-readers-file
-llama-index-llms-together
-together
+aiohttp
+httpx
+
+# DB
 SQLAlchemy>=2.0
 psycopg2-binary>=2.9
+together

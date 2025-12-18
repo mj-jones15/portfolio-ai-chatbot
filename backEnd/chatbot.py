@@ -16,9 +16,16 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from sentence_transformers import SentenceTransformer
 
 
-model_name = "all-mpnet-base-v2"
+model = None
+model_name = None
 
-model = SentenceTransformer(model_name)
+def get_embedding_model():
+    global model
+    if model is None:
+        model = SentenceTransformer("all-mpnet-base-v2")
+        model_name = "all-mpnet-base-v2"
+    return model
+
 
 # --- Query logging DB (Postgres via SQLAlchemy) ---
 # Use DATABASE_URL from env (Railway). Fallback to local SQLite when running locally.
