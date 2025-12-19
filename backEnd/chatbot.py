@@ -144,7 +144,7 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 Settings.llm = TogetherLLM(
     model="mistralai/Mixtral-8x7B-Instruct-v0.1",
     api_key=os.environ["TOGETHER_API_KEY"],
-    temperature=0.375
+    temperature=0.375,
 )
 
 # Create Document objects from the loaded documents and metadata
