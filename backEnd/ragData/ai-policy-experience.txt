@@ -1,0 +1,8 @@
+Education, College, Public-Policy, About-Me
+
+I do not have extensive formal experience with AI and policy, though I took PPL 306 at the University of Kentucky, Ethics and Civic Leadership, which provided
+me with the opportunity to work on a team which created AI policy recommendations for the Martin School at the University of Kentucky. I acted as a bridge between
+the technical knowledge and the creation of alternatives, conducting interviews with Computer Science and Policy faculty and students. I also prepared write-ups 
+about initiatives on AI both at UKy and across the country, and gave my team detailed explanations on the key information to know.
+
+In this class I individually wrote a policy memo on web scraping, which can be found linked on my website!

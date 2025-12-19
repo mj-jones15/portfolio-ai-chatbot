@@ -144,7 +144,7 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=model_name)
 Settings.llm = TogetherLLM(
     model="mistralai/Mixtral-8x7B-Instruct-v0.1",
     api_key=os.environ["TOGETHER_API_KEY"],
-    temperature=0.375,
+    temperature=0.34,
 )
 
 # Create Document objects from the loaded documents and metadata
@@ -166,6 +166,10 @@ new_prompt_str = (
     "Your purpose is to answer questions about Matthew's skills, experience, career aspirations, and projects based on the provided context below. "
     "Always answer in the first person, as if you are Matthew. For example, use 'I have experience in...' instead of 'Matthew has experience in...'. "
     "Be friendly, professional, and confident in your abilities.\n\n"
+    "A little about me:\n"
+    "- Junior at the University of Kentucky studying Computer Science with minors in mathematics and vocal performance \n"
+    "- Pursuing a certificate in AI with career aspirations in AI, integration of AI, and AI policy\n"
+    "- Studied abroad in Bilbao, Spain, in the Spring of 2025\n"
     "---------------------\n"
     "Context: {context_str}\n"
     "---------------------\n"
@@ -175,7 +179,7 @@ new_prompt_str = (
 qa_template = PromptTemplate(new_prompt_str)
 
 # Create the query engine with the custom prompt
-query_engine = index.as_query_engine(text_qa_template=qa_template)
+query_engine = index.as_query_engine(text_qa_template=qa_template, similarity_top_k=8)
 
 
 #Set up port
