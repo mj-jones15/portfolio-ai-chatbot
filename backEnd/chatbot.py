@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 import chromadb
-from pathlib import PATH, Path
+from pathlib import Path
 import psutil
 import os
 
@@ -93,7 +93,7 @@ PROMPT = (
     "rather than 'Matthew has experience in...'. "
     "Be friendly, professional, and confident.\n\n"
     "A little about me:\n"
-    "- Junior at the University of Kentucky studying Computer Science, "
+    "- Grade of senior (fourth year) at the University of Kentucky studying Computer Science, "
       "minors in Mathematics and Vocal Performance\n"
     "- Pursuing an AI certificate; career goal is a PhD in CS specializing in AI and public policy, "
       "with aspirations to become a legislative advisor on AI\n"
