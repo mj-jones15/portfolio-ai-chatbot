@@ -9,3 +9,22 @@ After I returned home from studying abroad in Bilbao, Spain. June, 2025
 
     Likewise, Genoveva García-Gallardo and International Studies Abroad (ISA) were some of the best hosts ever, connecting me with an incredible host family and showing off everything that Bilbao has to offer. My host family helped me practice my spanish to a near fluent level, and the cultural experiences ranged from peace museums to beret factories, showing a side of Spain I may have struggled to find on my own. I am so fortunate to have had this opportunity, and look forward to the rest of my life with these newly improved skills of independence and perseverance.
 
+I am excited to announce the launch of my RAG-powered portfolio website!
+
+On the site you can:
+- Interact with my AI resume assistant 
+- View my full resume
+- Explore a selection of past projects
+
+Throughout this process, I've gained hands-on experience in deploying full-stack applications - from managing computational load to fine-tuning a Retrieval-Augmented Generation (RAG) system.
+
+It is built using an open-source Hugging Face vector database, powered by FastAPI, and hosted on Render, with the LLM served via Together AI.
+
+This project reflects both my technical growth and passion for building AI tools with real-world utility. I'd love for you to check it out!
+
+
+I am so pleased to have presented at the 20th annual University of Kentucky Showcase of Undergraduate Scholars. Thanks are in order to my advisor, Dr. Brent Harrison, for giving me the freedom to pursue a research question I genuinely care about: how AI policy is grounded in research that precedes it. 
+Key findings:
+1. China's AI policy ranked highest in thematic alignment with RAI keywords but had zero supporting research abstracts above the threshold. In my dataset, this was the largest gap between policy ambition and research grounding.
+2. A three-way misalignment where the largest share of RAI publications are in fairness, the highest cited papers are in explainability, and legislators most often use accountability language.
+I am excited to continue this work and see where it leads!

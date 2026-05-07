@@ -1,4 +1,18 @@
-/* Make sure each section takes up the full viewport height */
+/* ═══════════════════════════════════════════════════════════════
+   BASE LAYOUT — scroll snap, full-height sections
+═══════════════════════════════════════════════════════════════ */
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
 .section {
     height: 100vh;
     display: flex;
@@ -7,6 +21,31 @@
     font-family: Franklin Gothic Medium;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
+
+/* Divider line between sections */
+.divider {
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION 1 — INTRO
+═══════════════════════════════════════════════════════════════ */
+
+#intro {
+    background: url('./files/images/bilbao.jpeg') no-repeat center center;
+    background-size: cover;
+    font-size: 3rem;
+    color: #202A44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 22vh;
+    height: 100vh;
 }
 
 .intro-text {
@@ -21,23 +60,13 @@
     color: black;
 }
 
-/* Section 1: Background image */
-#intro {
-    background: url('./files/images/bilbao.jpeg') no-repeat center center;
-    background-size: cover;
-    font-size: 3rem;
-    color: #202A44;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 22vh;
-    height: 100vh;
-}
 
-/* Section 2: Black background */
+/* ═══════════════════════════════════════════════════════════════
+   SECTION 2 — CHATBOT
+═══════════════════════════════════════════════════════════════ */
+
 #chatbot {
-    background-image: linear-gradient(#000000, #4478A8);
+    background-image: linear-gradient(#0d1b2a, #1a5276);
 }
 
 #user-input {
@@ -45,12 +74,12 @@
     flex-grow: 1;
     max-width: 400px;
     min-height: 50px;
-    height: 130px; /* taller than default */
-    resize: none; /* disables manual resize */
+    height: 130px;
+    resize: none;
     padding: 8px;
-    background-color: #000; /* black background */
-    color: #00bfff; /* blue font */
-    font-family: 'Courier New', monospace; /* matches retro terminal font */
+    background-color: #000;
+    color: #00bfff;
+    font-family: 'Courier New', monospace;
     font-size: 1rem;
     border: 2px solid #00bfff;
     border-radius: 10px;
@@ -59,7 +88,7 @@
 
 #sendButton {
     display: block;
-    margin: 1rem auto 0 auto; /* center below textarea */
+    margin: 1rem auto 0 auto;
     padding: 8px 16px;
     font-size: 1.1rem;
     background-color: #000;
@@ -72,26 +101,26 @@
 }
 
 #sendButton:hover {
-  background-color: #00bfff;
-  color: #000;
+    background-color: #00bfff;
+    color: #000;
 }
 
 .ai-response {
-  color: white;
+    color: white;
 }
 
 .terminal-window {
-  display: flex;
-  color: white;
-  justify-content: center; /* or flex-end for right */
-  gap: 10px; /* spacing between textarea and button */
-  margin-top: 10px;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  flex-direction: column;
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    flex-direction: column;
 }
 
 .suggestion {
@@ -104,122 +133,343 @@
 }
 
 @keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 1; }
     100% { opacity: 0; }
 }
 
 #chat-history {
-  width: 100%;
-  max-width: 600px;
-  color: white;
-  font-family: 'Courier New', monospace;
-  margin-bottom: 10px;
-  overflow-y: auto;
-  max-height: 300px;
-}
-
-
-/* Section 3: To Blue background and 3 columns */
-#info {
-    background-image: linear-gradient(#4478A8, #000000);
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: flex-start; /*align to top*/
-    font-size: 2pc;
-}
-
-.project-item {
-    font-size: 1.5pc;
-    line-height: 1.4;
-    color: #f8f8ff;
-}
-
-.project-link {
-    text-decoration: none;
-}
-
-.project-link .project-item {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.project-link .project-item:hover {
-    transform: scale(1.02);
-    text-decoration: underline;
-}
-
-.info-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
     width: 100%;
-    padding-top: 22vh;
+    max-width: 600px;
+    color: white;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    max-height: 300px;
 }
 
-.column {
-    flex: 1;
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION 3 — RESEARCH & PROJECTS
+═══════════════════════════════════════════════════════════════ */
+
+#research {
+    background-image: linear-gradient(#1a5276, #0d1b2a);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
-    font-size: 1.5rem;
-    text-align: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Divider line between sections */
-.divider {
-    height: 2px;
-    background-color: #ccc;
+.research-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    max-width: 1100px;
+    padding: 0 24px;
+    padding-top: 6vh;
+    box-sizing: border-box;
 }
 
-/* Optional: Add smooth scrolling and scroll snapping */
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100%;
+/* Section heading */
+.section-heading {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #f8f8ff;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    font-family: Franklin Gothic Medium;
 }
 
-body {
+/* ── Featured card (RAI Research) — full width ── */
+
+.featured-card {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(90, 160, 220, 0.45);
+    border-radius: 14px;
+    padding: 18px 22px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    transition: border-color 0.25s, transform 0.25s;
+    text-decoration: none;
+}
+
+.featured-card:hover {
+    border-color: rgba(0, 191, 255, 0.7);
+    transform: translateY(-3px);
+}
+
+.featured-thumb-wrap {
+    flex-shrink: 0;
+    width: 180px;
+}
+
+.featured-thumb {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    border: 1px solid rgba(68, 120, 168, 0.4);
+}
+
+.featured-thumb-caption {
+    font-family: 'Courier New', monospace;
+    font-size: 0.72rem;
+    color: #00bfff;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.featured-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f8f8ff;
+    font-family: Franklin Gothic Medium;
+}
+
+.card-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    background: rgba(0, 191, 255, 0.12);
+    border: 1px solid rgba(0, 191, 255, 0.4);
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: #00bfff;
+    font-family: 'Courier New', monospace;
+    width: fit-content;
+}
+
+.private-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    background: rgba(68, 120, 168, 0.15);
+    border: 1px solid rgba(68, 120, 168, 0.45);
+    border-radius: 4px;
+    padding: 2px 8px;
+    color: #aac4de;
+    font-family: 'Courier New', monospace;
+    width: fit-content;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    color: #cdd9e5;
+    line-height: 1.5;
+    font-family: Franklin Gothic Medium;
     margin: 0;
 }
 
-.resume-thumbnail {
-    width: 250px;
-    height: auto;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.card-cta {
+    font-size: 0.8rem;
+    color: #00bfff;
+    font-family: 'Courier New', monospace;
+    text-decoration: none;
 }
 
-.resume-thumbnail.hover {
-    transform: scale(1.05);
+.card-cta:hover {
+    text-decoration: underline;
 }
 
-.column-title {
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+/* ── Three smaller cards — row below featured ── */
+
+.projects-row {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(90, 160, 220, 0.35);
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    transition: border-color 0.25s, transform 0.25s;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    border-color: rgba(0, 191, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+/* Screenshot thumbnail inside small card */
+.card-thumb {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    object-position: top;   /* show the top of the screenshot, not center */
+    border-radius: 6px;
+    border: 1px solid rgba(68, 120, 168, 0.35);
+}
+
+.card-private-note {
+    font-size: 0.75rem;
+    color: #8aaccc;
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+    margin-top: auto;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION 4 — RESUME & CONTACT
+═══════════════════════════════════════════════════════════════ */
+
+#contact {
+    background-image: linear-gradient(#0d1b2a, #1a5276);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+    max-width: 960px;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.contact-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    flex: 1;
     text-align: center;
-    color: #f8f8ff;
 }
+
+.contact-col-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #f8f8ff;
+    font-family: Franklin Gothic Medium;
+}
+
+/* Full-length document thumbnails */
+.doc-thumbnail {
+    width: 185px;
+    height: auto;
+    max-height: 58vh;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    border: 1px solid rgba(90, 160, 220, 0.3);
+}
+
+.doc-thumbnail:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 191, 255, 0.22);
+}
+
+/* Keep for any remaining uses */
+.resume-thumbnail {
+    width: 185px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+}
+
+.resume-thumbnail:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.25);
+}
+
+.contact-link {
+    font-size: 1.3rem;
+    color: #f8f8ff;
+    text-decoration: none;
+    font-family: Franklin Gothic Medium;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: #00bfff;
+}
+
+.contact-email {
+    font-size: 1.15rem;
+    color: #cdd9e5;
+    font-family: Franklin Gothic Medium;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE — mobile
+═══════════════════════════════════════════════════════════════ */
 
 @media (max-width: 768px) {
-    .info-wrapper {
+
+    /* Research section: stack everything */
+    #research {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .research-wrapper {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    .featured-card {
+        flex-direction: column;
+    }
+
+    .featured-thumb-wrap {
+        width: 100%;
+    }
+
+    .featured-thumb {
+        height: 160px;
+    }
+
+    .projects-row {
+        flex-direction: column;
+    }
+
+    /* Contact section: stack columns */
+    .contact-wrapper {
         flex-direction: column;
         align-items: center;
+        gap: 40px;
+        padding-top: 10vh;
+        padding-bottom: 6vh;
     }
-    .column {
-        width: 100%;
-        max-width: 500px;
-    }
-    #info {
-        height: auto;       /* let it expand */
-        min-height: 100vh;  /* still at least fill the screen */
+
+    #contact {
+        height: auto;
+        min-height: 100vh;
     }
 }

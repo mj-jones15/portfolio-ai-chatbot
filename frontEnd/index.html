@@ -1,23 +1,30 @@
 <!DOCTYPE html>
+<!-- UPDATED: 4-section layout — Intro | Chatbot | Research & Projects | Resume & Contact -->
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matthew S. Jones | Portfolio</title>
-
     <link rel="stylesheet" href="webpage.css" />
 </head>
 <body>
+
+    <!-- ══════════════════════════════════════════════════════
+         SECTION 1 — INTRO
+    ══════════════════════════════════════════════════════ -->
     <section id="intro" class="section">
         <div class="intro-text">
-        <h1>Matthew Stuart Jones</h1>
-        <br><br><br><br>
-        <h2 class="subtitle">Computer Science Student at the University of Kentucky</h2>
-    </div>
+            <h1>Matthew Stuart Jones</h1>
+            <br><br><br><br>
+            <h2 class="subtitle">Computer Science Student at the University of Kentucky</h2>
+        </div>
     </section>
 
     <div class="divider"></div>
 
+    <!-- ══════════════════════════════════════════════════════
+         SECTION 2 — CHATBOT
+    ══════════════════════════════════════════════════════ -->
     <section id="chatbot" class="section">
         <div class="terminal-window">
             <div id="suggestion-box" class="suggestion"></div>
@@ -28,12 +35,13 @@
             <div id="loading-indicator" style="display:none; color: #00bfff; font-family: 'Courier New', monospace; margin-top: 10px;">Thinking...</div>
         </div>
     </section>
+
     <script>
-         const suggestions = [
+        const suggestions = [
             "Try asking about my resume.",
             "What are your post-undergrad goals?",
             "What projects are you most proud of?",
-            "Ask about my study abroad.",
+            "Tell me about your AI policy research.",
             "What is your collegiate GPA?",
             "What makes you a good computer scientist?",
             "Tell me about your research experience.",
@@ -47,16 +55,13 @@
             currentSuggestion = (currentSuggestion + 1) % suggestions.length;
         }
 
-        // Start the suggestion rotation
-        rotateSuggestion(); // show first immediately
-        setInterval(rotateSuggestion, 4000); // every 4 seconds
-
+        rotateSuggestion();
+        setInterval(rotateSuggestion, 4000);
 
         async function sendMessage() {
             const input = document.getElementById("user-input").value;
             if (!input.trim()) return;
 
-            // Show loading indicator
             document.getElementById("loading-indicator").style.display = "block";
 
             try {
@@ -70,7 +75,7 @@
 
                 document.getElementById("chat-history").innerHTML +=
                     `<p class="ai-response"><strong>You:</strong> ${input}</p>
-                    <p class="ai-response"><strong>AI:</strong> ${data.response}</p>`;
+                     <p class="ai-response"><strong>AI:</strong> ${data.response}</p>`;
 
                 document.getElementById("user-input").value = "";
             } catch (error) {
@@ -78,69 +83,159 @@
                 document.getElementById("chat-history").innerHTML +=
                     `<p class="ai-response"><strong>Error:</strong> Failed to get a response from the chatbot.</p>`;
             } finally {
-                // Hide loading indicator
                 document.getElementById("loading-indicator").style.display = "none";
             }
         }
-
     </script>
 
     <div class="divider"></div>
 
-    <section id="info" class="section">
-        <div class="info-wrapper">
-            <div class="column">
-                <div class="column-title">Projects</div>
-                <a href="https://github.com/mj-jones15/pastProjects/tree/main/" target="_blank" class="project-link">
-                    <div class="project-item">
-                        <br><br>
-                        Computer Science Projects
+    <!-- ══════════════════════════════════════════════════════
+         SECTION 3 — RESEARCH & PROJECTS
+    ══════════════════════════════════════════════════════ -->
+    <section id="research" class="section">
+        <div class="research-wrapper">
+
+            <div class="section-heading">Research &amp; Projects</div>
+
+            <!-- ── FEATURED: Independent Research (full-width card) ──────────
+                 Files to add to frontEnd/files/projects/ before deploying:
+                   • final_poster.pdf   — your poster PDF
+                   • poster_thumb.png   — PNG export of the first poster slide
+            ─────────────────────────────────────────────────────────────── -->
+            <div class="featured-card">
+
+                <a href="./files/projects/final_poster.pdf" target="_blank" style="flex-shrink:0;">
+                    <div class="featured-thumb-wrap">
+                        <img
+                            src="./files/projects/poster_thumb.png"
+                            alt="RAI Citation Research Poster thumbnail"
+                            class="featured-thumb"
+                            onerror="this.style.display='none'"
+                        />
+                        <div class="featured-thumb-caption">↗ click to open full poster</div>
                     </div>
                 </a>
-                <a href="https://github.com/mj-jones15/pastProjects/tree/main/Web-Scraping-Memo-Writing-Sample" target="_blank" class="project-link">
-                    <div class="project-item">
-                        <br><br>
-                        Writing Sample: Web Scraping Public Policy Memo
+
+                <div class="featured-body">
+                    <span class="card-badge">Independent Research · University of Kentucky</span>
+                    <div class="card-title">Responsible AI Citation &amp; Policy Influence Mapping</div>
+                    <p class="card-desc">
+                        Analyzes which Responsible AI research gets cited and how it flows into
+                        national governance — across 18 policy documents and two major ML
+                        conferences (AIES, NeurIPS). Built a full data pipeline using the
+                        Semantic Scholar API, <code style="font-size:0.8em; background:rgba(255,255,255,0.08); padding:1px 4px; border-radius:3px;">e5-large-v2</code>
+                        embeddings, and cosine similarity scoring against policy text.
+                    </p>
+                    <div style="display:flex; gap:18px; flex-wrap:wrap;">
+                        <a href="./files/projects/final_poster.pdf" target="_blank" class="card-cta">View Research Poster →</a>
+                        <a href="https://github.com/mj-jones15/independent_research/tree/main/rai-citation-influence" target="_blank" class="card-cta">GitHub Repo →</a>
                     </div>
-                </a>
-                </a>
-                <a href="https://www.illinoisbap.org/ask-bap" target="_blank" class="project-link">
-                    <div class="project-item">
-                        <br><br>
-                        Ask BAP - AI Chatbot Consulting
-                    </div>
-                </a>
+                </div>
             </div>
-            <div class="column">
-                <div class="column-title">Resume</div>
-                <br><br>
+
+            <!-- ── ROW: Three smaller project cards ────────────────────────── -->
+            <div class="projects-row">
+
+                <!-- ACCESS Allocations Assistant ─────────────────────────────
+                     File to add: frontEnd/files/projects/allocations-screenshot.png
+                     The <a> opens the screenshot itself in a new tab.
+                ─────────────────────────────────────────────────────────── -->
+                <a href="./files/projects/allocations-screenshot.png"
+                   target="_blank"
+                   class="project-card">
+                    <img
+                        src="./files/projects/allocations-screenshot.png"
+                        alt="ACCESS Allocations Assistant screenshot"
+                        class="card-thumb"
+                        onerror="this.style.display='none'"
+                    />
+                    <span class="private-badge">🔒 Code private — CCS research</span>
+                    <div class="card-title">ACCESS Allocations Assistant</div>
+                    <p class="card-desc">
+                        Multi-turn RAG chatbot for the NSF ACCESS cyberinfrastructure
+                        ecosystem. Built with ChromaDB, LlamaIndex, and local LLMs running
+                        on a Grace Hopper GPU cluster.
+                    </p>
+                    <span class="card-private-note">Ask me about this to learn more!</span>
+                </a>
+
+                <!-- MCP Semantic Router ────────────────────────────────────── -->
+                <div class="project-card" style="cursor: default;">
+                    <span class="private-badge">🔒 Code private — CCS research</span>
+                    <div class="card-title">MCP Semantic Router</div>
+                    <p class="card-desc">
+                        Semantic routing layer that classifies user queries and dispatches
+                        them to specialized AI agents — using embedding-based intent
+                        detection over an MCP server architecture.
+                    </p>
+                    <span class="card-private-note">Ask me about this to learn more!</span>
+                </div>
+
+                <!-- Web Scraping Policy Memo ───────────────────────────────── -->
+                <a href="https://github.com/mj-jones15/pastProjects/tree/main/Web-Scraping-Memo-Writing-Sample"
+                   target="_blank"
+                   class="project-card">
+                    <span class="card-badge">Policy Writing Sample</span>
+                    <div class="card-title">AI &amp; Web Scraping Policy Memo</div>
+                    <p class="card-desc">
+                        Comparative analysis of EU and Chinese regulatory frameworks on
+                        web scraping for AI training data, written for a non-technical
+                        policy audience.
+                    </p>
+                    <span class="card-cta">Read on GitHub →</span>
+                </a>
+
+            </div><!-- /projects-row -->
+        </div><!-- /research-wrapper -->
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         SECTION 4 — RESUME & CONTACT
+    ══════════════════════════════════════════════════════ -->
+    <section id="contact" class="section">
+        <div class="contact-wrapper">
+
+            <!-- Resume column -->
+            <div class="contact-col">
+                <div class="contact-col-title">Resume</div>
                 <a href="./files/pdfs/Resume.pdf" target="_blank">
                     <img
                         src="./files/images/ResumeThumbnail.jpg"
-                        class="resume-thumbnail"
-                        style="max-height: 260px; width: auto;"
+                        class="doc-thumbnail"
+                        alt="Resume thumbnail"
                     />
                 </a>
-                <div class="column-title" style="margin-top: 20px;">
-                    <a href="./files/pdfs/Matthew-Jones-CV.pdf" target="_blank" style="text-decoration: none; color: inherit;">
-                        Curriculum Vitae
-                    </a>
-                </div>
             </div>
-            <div class="column">
-                <div class="column-title">Contact</div>
-                <a href="https://www.linkedin.com/in/matthew-jones-34449b260/" target="_blank" class="project-link">
-                    <div class="project-item">
-                        <br><br>
-                        LinkedIn Profile
-                    </div>
+
+            <!-- CV column -->
+            <div class="contact-col">
+                <div class="contact-col-title">CV</div>
+                <a href="./files/pdfs/Matthew-Jones-CV.pdf" target="_blank">
+                    <img
+                        src="./files/images/CVThumbnail.jpg"
+                        class="doc-thumbnail"
+                        alt="Curriculum Vitae thumbnail"
+                        onerror="this.style.display='none'"
+                    />
                 </a>
-                <div class="project-item">
-                    <br><br><br>
-                    Email: matthew.stuart.jones@icloud.com
-                </div>
             </div>
+
+            <!-- Contact column -->
+            <div class="contact-col">
+                <div class="contact-col-title">Contact</div>
+                <a href="https://www.linkedin.com/in/matthew-jones-34449b260/"
+                   target="_blank"
+                   class="contact-link">
+                    LinkedIn Profile
+                </a>
+                <span class="contact-email">matthew.stuart.jones@icloud.com</span>
+            </div>
+
         </div>
     </section>
+
 </body>
 </html>
