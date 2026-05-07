@@ -138,8 +138,6 @@
             <div class="projects-row">
 
                 <!-- ACCESS Allocations Assistant ─────────────────────────────
-                     File to add: frontEnd/files/projects/allocations-screenshot.png
-                     The <a> opens the screenshot itself in a new tab.
                 ─────────────────────────────────────────────────────────── -->
                 <a href="./files/projects/allocations-screenshot.png"
                    target="_blank"
@@ -154,8 +152,12 @@
                     <div class="card-title">ACCESS Allocations Assistant</div>
                     <p class="card-desc">
                         Multi-turn RAG chatbot for the NSF ACCESS cyberinfrastructure
-                        ecosystem. Built with ChromaDB, LlamaIndex, and local LLMs running
-                        on a Grace Hopper GPU cluster.
+                        ecosystem. Utilizes an LLM based tagging
+                        algorithm to classify user queries based on field of science. 
+                        Pulls relevant similar research proposals, summarizes them, and will 
+                        answer queries about proposal writing best practices, resource allocation amounts, and more.
+                        Built with ChromaDB, LlamaIndex, and local LLMs running
+                        on a Grace Hopper GPU cluster. 
                     </p>
                     <span class="card-private-note">Ask me about this to learn more!</span>
                 </a>
@@ -215,7 +217,7 @@
                 <div class="contact-col-title">CV</div>
                 <a href="./files/pdfs/Matthew-Jones-CV.pdf" target="_blank">
                     <img
-                        src="./files/images/CVThumbnail.jpg"
+                        src="./files/images/CVthumbnail.jpg"
                         class="doc-thumbnail"
                         alt="Curriculum Vitae thumbnail"
                         onerror="this.style.display='none'"

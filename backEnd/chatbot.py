@@ -10,6 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 import chromadb
+from pathlib import PATH, Path
 import psutil
 import os
 
@@ -22,7 +23,8 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-CHROMA_PATH = "./chroma_db"
+BASE_DIR = Path(__file__).resolve().parent
+CHROMA_PATH = BASE_DIR / "chroma_db"
 MODEL_NAME  = "all-mpnet-base-v2"
 
 # ── Query-logging DB (Postgres on Railway, SQLite locally) ────────────────────
@@ -65,6 +67,10 @@ Settings.llm = TogetherLLM(
 print("[INFO] Loading ChromaDB from disk...")
 
 chroma_client = chromadb.PersistentClient(path=CHROMA_PATH)
+# Debugging
+print("[INFO] Available collections:")
+print(chroma_client.list_collections())
+# End debugging
 collection    = chroma_client.get_collection("filesAboutMyself")
 vector_store  = ChromaVectorStore(chroma_collection=collection)
 storage_ctx   = StorageContext.from_defaults(vector_store=vector_store)
