@@ -41,7 +41,3 @@ desktop.ini
 *.db
 *.log
 
-# Chroma or other local DBs
-chroma_db/
-db/
-vector_store/
