@@ -30,14 +30,7 @@ node_modules/
 # Frontend build artifacts
 *.log
 .DS_Store
-*.sqlite3
-
-# OS-specific files
-Thumbs.db
-ehthumbs.db
-desktop.ini
 
 # Render-specific
-*.db
 *.log
 
