@@ -10,7 +10,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 import chromadb
-from pathlib import Path
 import psutil
 import os
 
@@ -23,8 +22,8 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-BASE_DIR = Path(__file__).resolve().parent
-CHROMA_PATH = BASE_DIR / "chroma_db"
+# Fixed — always resolves relative to chatbot.py regardless of working directory
+CHROMA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chroma_db")
 MODEL_NAME  = "all-mpnet-base-v2"
 
 # ── Query-logging DB (Postgres on Railway, SQLite locally) ────────────────────

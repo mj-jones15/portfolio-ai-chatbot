@@ -23,8 +23,9 @@ import chromadb
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-CHROMA_PATH = "./chroma_db"
-DATA_DIR    = "./ragData"
+_HERE     = os.path.dirname(os.path.abspath(__file__))
+CHROMA_PATH = os.path.join(_HERE, "chroma_db")
+DATA_DIR    = os.path.join(_HERE, "ragData")
 MODEL_NAME  = "all-mpnet-base-v2"
 
 # Files to exclude from the vector store.

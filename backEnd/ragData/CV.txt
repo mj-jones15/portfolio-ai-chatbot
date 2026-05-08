@@ -1,48 +1,63 @@
 About-Me, CV, Education, Graduate-School
 
 Matthew Stuart Jones
-847-431-7231 | matthew.stuart,jones@icloud.com | Portfolio Website
+847-431-7231 | matthew.stuart,jones@icloud.com | Portfolio Website (https://portfolio-frontend-enf4.onrender.com) | LinkedIn (https://www.linkedin.com/in/matthew-jones-34449b260/)
 EDUCATION
-Bachelor of Science, Computer Science • University of Kentucky - Projected Graduation, May 2027
+Bachelor of Science, Computer Science (4.0 GPA) • University of Kentucky - Projected Graduation, May 2027
 • Minors: Mathematics and Vocal Performance
 • Artificial Intelligence Certificate
 • Study Abroad Experience in Bilbao, Spain (Universidad de Deusto)
-(4.0 GPA) 
+
 RESEARCH EXPERIENCE
-Independent Study with Dr. Brent Harrison • Human Centered AI, AI Ethics - Upcoming, Spring 2026
+NSF Research Experience for Undergraduates (REU), Data Science & AI Program Worcester Polytechnic Institute (WPI) — Worcester, Massachusetts - Summer 2026
+• Selected for nationally competitive NSF-funded REU cohort in Data Science and Artificial Intelligence
+
+Independent Study: Responsible AI Citation & Policy Influence Mapping - Spring 2026
+Advisor: Dr. Brent Harrison, University of Kentucky — Human Centered AI, AI Ethics
+• Analyzed citation flows between RAI literature (AIES, NeurIPS) and 18 national AI governance frameworks;
+identified three-way misalignment between paper production (fairness), citation impact (explainability), and
+policy language (accountability)
+• Built end-to-end data pipeline using Semantic Scholar API, intfloat/e5-large-v2 embeddings, and cosine similarity
+scoring to quantify research-to-policy alignment across a 20,000+ paper corpus
+
 AI Researcher for ACCESS,
 UK Center for Computational Sciences (CCS) October 2024 – Present (Including Summer 2025)
 • MCP categorizer to select a specific AI Agent based on the user’s query
 • RAG model to assist users in drafting allocation abstracts and proposals based on past submissions
 • LLM based tagging algorithm to categorize proposals based on their abstracts
 • Improved existing AI models through document verification and retraining
+
 INVITED TALKS
 Fall 2025
 • HON 251: Technology and the Human Experience (Honors) Guest Lecturer: “A Brief Overview of AI Policy”,
 CONFERENCES
 • “UK NSF Regional AI Workshop” – Lexington, Kentucky - October 7, 2025 • “UK AI/ML Research Symposium” – Lexington, Kentucky - March 28, 2024, November 12, 2024 • “UK Commonwealth Computational Sciences Summit on AI” – Lexington, Kentucky - October 17, 2023
 SKILLS
-• AI/ML Development: Hands on experience with OpenAI, Ollama, and open source LLMs.
-• Mathematical Foundation: Strong theoretical background in algorithms, linear algebra, probability, and
-numerical methods, with upcoming training in deep learning and models of computation.
-• Programming & Systems: Proficient in Python for machine learning & AI (NumPy, pandas), SQL, and full-
-stack web development (JavaScript, HTML, CSS); proficient with C, C++, Linux, and R.
-• Applications: RAG and MCP AI models with advanced document reranking and multi-LLM tournament
-schemes, predictive text tools in C++, Arduino hardware, and responsive website deployment.
-• Communication and Collaboration: Public speaking, technical presentations, and team leadership in academic
-and extracurricular settings; cross-cultural experience from study abroad in Spain (conversational Spanish).
-RELEVANT COURSEWORK
+• AI/ML Engineering: Built RAG systems, MCP semantic routers, and LLM-based tagging pipelines using
+LlamaIndex, ChromaDB, sentence-transformers, and Ollama; experience with OpenAI API and local open-source
+models.
+• Mathematical Foundations: Strong background in algorithms, linear algebra, probability, and numerical
+methods; coursework in sequential decision making, deep learning, and models of computation.
+• Programming & Systems: Python (NumPy, pandas, scikit-learn) for ML/AI; C and C++; SQL; full-stack web
+development (JavaScript, HTML, CSS); Linux; R.
+• Research & Data Pipelines: Designed end-to-end NLP pipelines for literature analysis at scale — API-based
+corpus ingestion, embedding generation (e5-large-v2), and cosine similarity scoring across large document
+corpora; familiar with academic literature APIs (Semantic Scholar).
+• Policy Communication: Translates complex AI and technical concepts for policy, academic, and general
+audiences; experience analyzing national AI governance frameworks across multiple jurisdictions; public speaker
+and technical presenter; fluent in Spanish.
+FEATURED COURSEWORK
+• CS 667: Sequential Decision Making
+• CS 575: Models of Computation
+• CS 485G: Data Ethics
+• CS 463G: Intro to AI
 • CS 315: Algorithms
-• CS 270: Systems Programming
 • PPL 306: Ethics and Civic Leadership – revolved around AI Public Policy
 • MA 322: Matrix Algebra and Its Applications
 • MA 321: Intro to Numerical Methods
 • MA 320: Introductory Probability
--- Spring 2026 Featured Coursework --
-• CS 485: Data Ethics
-• CS 575: Models of Computation
 HONORS AND AWARDS
-• Dean’s List – 5 Semesters
+• Dean’s List – 6 Semesters
 • Pigman College of Engineering Marky Campbell Scholarship
 • UK Bluegrass Spirit Scholarship
 • UK Education Abroad Scholarship
@@ -67,6 +82,9 @@ c. Email: cory.curl@uky.edu
 • Dr. Brent Harrison, University of Kentucky
 a. Director of Undergraduate Studies, Pigman College of Engineering Computer Science
 b. Phone: (859) 257-8040
+• Dr. Ruiquan Huang, University of Kentucky
+a. Assistant Professor, Department of Computer Science
+b. Email: ruiquanhuang@uky.edu
 c. Email: brent.harrison@uky.edu
 • Dr. Joe Martin, University of Kentucky
 a. Senior Lecturer, School of Information Science
