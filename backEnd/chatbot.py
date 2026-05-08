@@ -21,7 +21,7 @@ from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # For document priority re-ranking
-from llama_index.core.postprocessor import BaseNodePostprocessor
+from llama_index.core.postprocessor.types import BaseNodePostprocessor
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core.schema import NodeWithScore, QueryBundle
 
