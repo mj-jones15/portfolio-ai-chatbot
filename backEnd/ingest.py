@@ -107,5 +107,6 @@ index = VectorStoreIndex.from_documents(
     show_progress=True,
 )
 
+storage_ctx.persist()
 print(f"\n[DONE] Vector store saved to '{CHROMA_PATH}/'")
 print("       Commit the chroma_db/ folder to git before deploying.")

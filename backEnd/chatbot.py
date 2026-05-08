@@ -20,6 +20,11 @@ from llama_index.llms.together import TogetherLLM
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
+# For document priority re-ranking
+from llama_index.core.postprocessor import BaseNodePostprocessor
+from llama_index.core.query_engine import RetrieverQueryEngine
+from llama_index.core.schema import NodeWithScore, QueryBundle
+
 # ── Config ────────────────────────────────────────────────────────────────────
 
 # Fixed — always resolves relative to chatbot.py regardless of working directory
@@ -107,7 +112,42 @@ PROMPT = (
 )
 
 qa_template  = PromptTemplate(PROMPT)
-query_engine = index.as_query_engine(text_qa_template=qa_template, similarity_top_k=5)
+
+# ── Custom node postprocessor for priority re-ranking ─────────────────────────
+class PriorityReranker(BaseNodePostprocessor):
+    """
+    Nodes with 'priority' in their keyword metadata are moved to the front
+    of the retrieved set before the LLM sees them. Relative ordering within
+    each group (priority vs. normal) is preserved by similarity score.
+    """
+    def _postprocess_nodes(
+        self,
+        nodes: list[NodeWithScore],
+        query_bundle: QueryBundle | None = None,
+    ) -> list[NodeWithScore]:
+        priority_nodes = []
+        normal_nodes   = []
+        for node in nodes:
+            keywords = node.node.metadata.get("keywords", "")
+            tags = [t.strip().lower() for t in keywords.split(",")]
+            if "priority" in tags:
+                priority_nodes.append(node)
+            else:
+                normal_nodes.append(node)
+
+        bumped = len(priority_nodes)
+        if bumped:
+            print(f"[RERANK] Bumped {bumped} priority node(s) to top of context")
+        return priority_nodes + normal_nodes
+
+
+# Split into retriever + postprocessor so priority reranking runs between them
+retriever    = index.as_retriever(similarity_top_k=8)
+query_engine = RetrieverQueryEngine.from_args(
+    retriever=retriever,
+    node_postprocessors=[PriorityReranker()],
+    text_qa_template=qa_template,
+)
 
 # ── Helper ────────────────────────────────────────────────────────────────────
 

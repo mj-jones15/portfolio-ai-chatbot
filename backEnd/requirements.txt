@@ -1,21 +1,21 @@
-fastapi
-uvicorn
+fastapi==0.115.0
+uvicorn==0.30.6
 pydantic
 python-dotenv
 
 # Vector DB
-chromadb
+chromadb==0.5.5
 
 # LlamaIndex (ONLY what you use)
 llama-index-core
-llama-index-vector-stores-chroma
-llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma==0.1.10
+llama-index-embeddings-huggingface==0.2.2
 llama-index-llms-together
 
 # Embeddings
-sentence-transformers
+sentence-transformers==2.7.0
 huggingface-hub
-transformers
+transformers==4.41.2
 
 # System utils
 psutil

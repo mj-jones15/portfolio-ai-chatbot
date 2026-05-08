@@ -1,4 +1,4 @@
-About-Me, CV, Education, Graduate-School
+About-Me, CV, Education, Graduate-School, Priority
 
 Matthew Stuart Jones
 847-431-7231 | matthew.stuart,jones@icloud.com | Portfolio Website (https://portfolio-frontend-enf4.onrender.com) | LinkedIn (https://www.linkedin.com/in/matthew-jones-34449b260/)

@@ -1,34 +1,15 @@
-Education, College, Graduate-school
-During the University of Kentucky’s First Year Engineering program, the curriculum
-constantly pushes itself to ask students one question. What does it mean to be an engineer? The
-answer to this question varies from one student’s perspective to another, but to me, there is a
-clear-cut definition. When an individual has the capacity for creating a solution to a problem and
-acts upon that ability induce positive change, they are an engineer. In this sense, I still consider
-myself to be an engineer, but in a different lense. After completing my undergraduate Computer
-Science Degree, I am seeking to go to graduate school where I will specialize in AI policy. Our world
-is hurtling into a future full of unknowns surrounding AI and the future of technology, and prior
-to full implementation of AI in people’s daily lives, trained professionals need to already have
-written adequate legislation surrounding it. To that end, I am studying towards the goal of being
-an AI Policy Advisor for congresspeople to write legislation that prepares us for threats and
-complications dealing with the technology sector.
-There are a multitude of factors that have influenced me to pursue this career, none being
-more important than my family. Growing up my father bounced around the tech industry from
-cybersecurity to telecommunications, and I was naturally inclined to learn more about
-computers. However, it would take more than just an inclination towards computers for me to
-decide to go to graduate school. In fact, it was while I was writing my college essays in my senior
-year of high school that I really started to identify where I wanted to orient my studies.
-Naturally being a leader, I have captained my Cross Country and Track team
-down to State, taken point on group projects, and loved coaching all my life. The elation that can
-be felt by a group of peers that just overcame a monumental task is that of the purest joy, and to
-be the one that lead them there yields an even greater feeling. Therefore, this love of leadership is
-what has led me to pursue a career on the very cutting edge. As college essays demanded I start
-figuring out my next steps, I started brainstorming career paths that would combine leading a
-team with my cultivated love of technology. Likewise, I have never wanted to have a mundane
-job, and so the idea of advising policy for one of my generations greatest challenges became my
-obsession. I began learning all I could on AI, and at Kentucky I have attended UK’s
-Computational Sciences Summit on AI, spoken with lawyers in the field, and researched
-technology legislation on my own. However, none of these opportunities bear the funds
-necessary for seven years of higher education, and it is for this reason that I should be the
-recipient of this scholarship.
+Education, College, Graduate-school, Priority
+My inspiration for pursuing research in AI has come from an eagerness to solve the biggest problems I can with the skills that I have. With AI being the great challenge and opportunity that it is, I want to create evidence-based contributions in the insertion of AI into society. 
+As a current junior at the University of Kentucky, I have had numerous experiences in human-centered AI already. 
+AI Recommendations for the Martin School of Public Policy
+This last semester, I had the privilege to work on a group project in my Ethics and Civic Leadership policy class to research and present AI education recommendations to the Martin School of Public Policy. Our goal was to implement rules for AI usage in the classroom and augment the four-year plan for undergraduates to include work in AI policy. As the only computer scientist on the team, I provided a link between technical topics discussed from Computer Science Faculty and explained current approaches that universities are taking. This provided hands-on experience in policy evaluation, and the opportunity to practice presenting highly technical topics to a non-technical audience.
+Human-Centered and Explainable AI Independent Study 
+This semester, I have worked with Dr. Brent Harrison on studying the legislative impacts of responsible AI (RAI) research. By conducting a literature review of a few well-known AI-focused conferences, we are studying whether this research has attributed or been used to create our current AI legislation. 
+LLM Based AI Research for NSF ACCESS
+As an AI researcher at the UK Center for Computational Sciences, I have had the opportunity to create and implement multiple LLM based solutions to problems our team faces. We work under an NSF support grant for ACCESS, a HPC cyberinfrastructure program for researchers. I have learned a lot about MCP, RAG, and AI systems through LLM based categorizers, classifiers, and recommender systems.
+Worcester Polytechnic Institute REU
+This coming summer I will be working at WPI to study AI-powered systems for social good. While I don’t have my project assignment yet, some possible projects are working on systems for detecting early diseases through AI inferencing systems in wearable health technology, or other programs that identify at-risk veterans.
 
-
+I will be applying to Ph.D. programs in computer science this coming fall. Long term, I am seeking a career path as a researcher who informs AI policy and governance, and a humane technologist. I envision myself as a highly educated researcher who has the technical grounding to give impactful testimony to develop benevolent AI systems and legislation that respects and benefits diverse perspectives and communities.
+As seen by my experience, I have taken strides towards succeeding in my future graduate program. That said, I need all the assistance and funding that I can possibly receive as I approach graduate school and the financial trade-offs between a corporate job. I deserve this scholarship because I have been a 4.0 student at Kentucky and have excelled in every way that the college of engineering could have hoped I would.
+
