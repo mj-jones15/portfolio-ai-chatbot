@@ -28,3 +28,6 @@ Key findings:
 1. China's AI policy ranked highest in thematic alignment with RAI keywords but had zero supporting research abstracts above the threshold. In my dataset, this was the largest gap between policy ambition and research grounding.
 2. A three-way misalignment where the largest share of RAI publications are in fairness, the highest cited papers are in explainability, and legislators most often use accountability language.
 I am excited to continue this work and see where it leads!
+
+
+Excited to share that I'll be spending this summer at Worcester Polytechnic Institute as part of their NSF-funded REU program in Applied AI. Over ten weeks, I'll be researching AI challenges in areas like misinformation detection and societal impact — work that connects directly to my interests in how we can control how AI shapes the world around us. Huge thank you to Jessica Lusignan and the WPI team for this opportunity! #MYREUWPI

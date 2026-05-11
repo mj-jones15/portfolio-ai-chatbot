@@ -44,25 +44,24 @@ fall semester:
 5. Men's Choir
 6. Voice Studio
 spring semester:
-1. Machine Learning (important)
+1. Data Ethics
 2. Intro to Computer Networking
 3. Models of Computation 
-4. Computer Ethics (important)
+4. Independent Study
 5. Men's Choir
 6. Voice Studio
 
 Senior year
 fall semester:
 1. Intro to Artificial Intelligence (important)
-2. Software Engineering for Senior Project
-3. Introduction to Database Systems 
-4. Theory for Non-Music Majors
+2. Senior Design Project
+3. Independent Study
+4. Sequential Decision Making
 5. Men's Choir
 6. Voice Studio
 spring semester:
 1. Mathematical Introduction to Deep Learning (important)
-2. Senior Design Project
-3. History of Music I
+2. Software Engineering for Senior Project
+3. Game Theory
 4. A Global Dynamics Course
-5. Men's Choir
-6. Voice Studio
+5. Databases
