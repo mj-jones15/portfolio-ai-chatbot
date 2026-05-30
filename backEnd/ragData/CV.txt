@@ -1,91 +1,94 @@
-About-Me, CV, Education, Graduate-School, Priority
-
 Matthew Stuart Jones
-847-431-7231 | matthew.stuart,jones@icloud.com | Portfolio Website (https://portfolio-frontend-enf4.onrender.com) | LinkedIn (https://www.linkedin.com/in/matthew-jones-34449b260/)
+847-431-7231 | matthew.stuart.jones@icloud.com | Portfolio Website | LinkedIn
 EDUCATION
-Bachelor of Science, Computer Science (4.0 GPA) • University of Kentucky - Projected Graduation, May 2027
-• Minors: Mathematics and Vocal Performance
+University of Kentucky Bachelor of Science, Computer Science • Minors: Mathematics and Vocal Performance
 • Artificial Intelligence Certificate
 • Study Abroad Experience in Bilbao, Spain (Universidad de Deusto)
-
 RESEARCH EXPERIENCE
-NSF Research Experience for Undergraduates (REU), Data Science & AI Program Worcester Polytechnic Institute (WPI) — Worcester, Massachusetts - Summer 2026
+Projected Graduation, May 2027
+GPA: 4.0/4.0
+NSF Research Experience for Undergraduates (REU), Data Science & AI Program Worcester Polytechnic Institute (WPI) — Worcester, Massachusetts
+Summer 2026
 • Selected for nationally competitive NSF-funded REU cohort in Data Science and Artificial Intelligence
-
-Independent Study: Responsible AI Citation & Policy Influence Mapping - Spring 2026
+• Research focused on adverse drug reactions (ADRs), mapping interconnections between drug–drug, drug–herb, and
+drug–supplement interactions using ML and deep learning methods
+• Developing adaptable modeling approaches across diverse biomedical problem domains
+Independent Study: Responsible AI Citation & Policy Influence Mapping Spring 2026
 Advisor: Dr. Brent Harrison, University of Kentucky — Human Centered AI, AI Ethics
 • Analyzed citation flows between RAI literature (AIES, NeurIPS) and 18 national AI governance frameworks;
-identified three-way misalignment between paper production (fairness), citation impact (explainability), and
-policy language (accountability)
+identified three-way misalignment between paper production (fairness), citation impact (explainability), and policy
+language (accountability)
 • Built end-to-end data pipeline using Semantic Scholar API, intfloat/e5-large-v2 embeddings, and cosine similarity
 scoring to quantify research-to-policy alignment across a 20,000+ paper corpus
-
-AI Researcher for ACCESS,
-UK Center for Computational Sciences (CCS) October 2024 – Present (Including Summer 2025)
-• MCP categorizer to select a specific AI Agent based on the user’s query
-• RAG model to assist users in drafting allocation abstracts and proposals based on past submissions
-• LLM based tagging algorithm to categorize proposals based on their abstracts
-• Improved existing AI models through document verification and retraining
-
+• Presented findings at the 20th Annual University of Kentucky Showcase of Undergraduate Scholars
+AI Researcher for ACCESS October 2024 – Present (incl. Summer 2025)
+UK Center for Computational Sciences (CCS) — Lexington, Kentucky
+• Built MCP-based semantic router to categorize incoming queries and route them to the appropriate AI agent across the
+ACCESS cyberinfrastructure ecosystem
+• Developed Retrieval-Augmented Generation (RAG) system to assist users in drafting allocation abstracts and proposals based
+on a corpus of past submissions
+• Designed multi-LLM tournament tagger to categorize research proposals by field of science using open-source models deployed
+on a Grace Hopper cluster via Ollama
+• Improved existing AI models through document verification and retraining workflows
 INVITED TALKS
-Fall 2025
-• HON 251: Technology and the Human Experience (Honors) Guest Lecturer: “A Brief Overview of AI Policy”,
+Guest Lecturer, HON 251: Technology and the Human Experience (Honors) “A Brief Overview of AI Policy” — University of Kentucky
 CONFERENCES
-• “UK NSF Regional AI Workshop” – Lexington, Kentucky - October 7, 2025 • “UK AI/ML Research Symposium” – Lexington, Kentucky - March 28, 2024, November 12, 2024 • “UK Commonwealth Computational Sciences Summit on AI” – Lexington, Kentucky - October 17, 2023
-SKILLS
-• AI/ML Engineering: Built RAG systems, MCP semantic routers, and LLM-based tagging pipelines using
-LlamaIndex, ChromaDB, sentence-transformers, and Ollama; experience with OpenAI API and local open-source
-models.
-• Mathematical Foundations: Strong background in algorithms, linear algebra, probability, and numerical
-methods; coursework in sequential decision making, deep learning, and models of computation.
-• Programming & Systems: Python (NumPy, pandas, scikit-learn) for ML/AI; C and C++; SQL; full-stack web
-development (JavaScript, HTML, CSS); Linux; R.
-• Research & Data Pipelines: Designed end-to-end NLP pipelines for literature analysis at scale — API-based
-corpus ingestion, embedding generation (e5-large-v2), and cosine similarity scoring across large document
-corpora; familiar with academic literature APIs (Semantic Scholar).
-• Policy Communication: Translates complex AI and technical concepts for policy, academic, and general
-audiences; experience analyzing national AI governance frameworks across multiple jurisdictions; public speaker
-and technical presenter; fluent in Spanish.
+Fall 2025
+• “UK NSF Regional AI Workshop” — Lexington, Kentucky • “UK AI/ML Research Symposium” — Lexington, Kentucky • “UK Commonwealth Computational Sciences Summit on AI” — Lexington, Kentucky SKILLS
+October 7, 2025
+March 28, 2024; November 12, 2024
+October 17, 2023
+• AI/ML Engineering: Built RAG systems, MCP semantic routers, and LLM-based tagging pipelines using LlamaIndex,
+ChromaDB, sentence-transformers, and Ollama; experience with OpenAI API and local open-source models.
+• Mathematical Foundations: Strong background in algorithms, linear algebra, probability, and numerical methods;
+coursework in sequential decision making, deep learning, and models of computation.
+• Programming & Systems: Python (NumPy, pandas, scikit-learn) for ML/AI; C and C++; SQL; full-stack web development
+(JavaScript, HTML, CSS); Linux; R.
+• Research & Data Pipelines: Designed end-to-end NLP pipelines for literature analysis at scale — API-based corpus
+ingestion, embedding generation (e5-large-v2), and cosine similarity scoring across large document corpora; familiar with
+academic literature APIs (Semantic Scholar, OpenAlex).
+1
+• Policy Communication: Translates complex AI and technical concepts for policy, academic, and general audiences;
+experience analyzing national AI governance frameworks across multiple jurisdictions; public speaker and technical presenter;
+fluent in Spanish.
 FEATURED COURSEWORK
-• CS 667: Sequential Decision Making
-• CS 575: Models of Computation
-• CS 485G: Data Ethics
-• CS 463G: Intro to AI
-• CS 315: Algorithms
-• PPL 306: Ethics and Civic Leadership – revolved around AI Public Policy
-• MA 322: Matrix Algebra and Its Applications
-• MA 321: Intro to Numerical Methods
-• MA 320: Introductory Probability
+CS 667 Sequential Decision Making CS 463G Intro to AI
+CS 575 Models of Computation CS 315 Algorithms
+CS 485G Data Ethics PPL 306 Ethics and Civic Leadership
+MA 322 Matrix Algebra and Its Applications MA 321 Intro to Numerical Methods
+MA 320 Introductory Probability
 HONORS AND AWARDS
-• Dean’s List – 6 Semesters
+• Dean’s List — 6 Semesters
 • Pigman College of Engineering Marky Campbell Scholarship
 • UK Bluegrass Spirit Scholarship
 • UK Education Abroad Scholarship
 PROFESSIONAL ORGANIZATIONS
-• Kentucky Alpha Chapter of Tau Beta Pi
-ORGANIZATIONS AND INVOLVMENT
-• acoUstiKats a cappella group – Social Media Manager
-• Tau Beta Pi – Treasurer
-• UK Men’s Chorus – Section Leader
+Kentucky Alpha Chapter of Tau Beta Pi Treasurer
+• Manage chapter finances for a 120-member engineering honor society, including dues, budgeting, and scholarship requests
+• Coordinate food and logistics for chapter meetings and events
+• Volunteer judge at Future Cities regional engineering competition
+ORGANIZATIONS AND INVOLVEMENT
+acoUstiKats A Cappella Social Media Manager
+• Spearheaded the group’s first ICCA campaign where I initiated the decision to compete and led competition research
+• Create content across platforms, design and produce group merchandise, and publicize campaign events
+UK Men’s Chorus Baritone Section Leader
+• Served as section leader on the group’s New York tour, coordinating logistics and welfare for the baritone section
+• Part of a leadership team focused as much on culture as performance, fostering an environment where singers are locked in
+and also genuinely taking care of each other
 REFERENCES
-• Dr. Jim Griffieon, University of Kentucky
-a. Director of UK Center for Computational Sciences
-b. Phone: (859) 257-6746
-c. Email: griff@netlab.uky.edu
-• Dr. Bruce Walcott, University of Kentucky
-a. Tau Beta Pi Faculty Advisor
-b. Email: bruce.walcott@uky.edu
-• Dr. Cory Curl, University of Kentucky
-a. Director of Undergraduate Studies, Martin School of Public Policy
-b. Phone: (859) 562-3182
-c. Email: cory.curl@uky.edu
-• Dr. Brent Harrison, University of Kentucky
-a. Director of Undergraduate Studies, Pigman College of Engineering Computer Science
-b. Phone: (859) 257-8040
-• Dr. Ruiquan Huang, University of Kentucky
-a. Assistant Professor, Department of Computer Science
-b. Email: ruiquanhuang@uky.edu
-c. Email: brent.harrison@uky.edu
-• Dr. Joe Martin, University of Kentucky
-a. Senior Lecturer, School of Information Science
-b. Email: joe.martin@uky.edu
+Dr. Brent Harrison Dr. Jim Griffieon
+Director of Undergraduate Studies, CS Director, UK Center for Computational Sciences
+Pigman College of Engineering, UK University of Kentucky
+brent.harrison@uky.edu griff@netlab.uky.edu
+(859) 257-8040 (859) 257-6746
+Dr. Mike Johnson Dr. Cory Curl
+Tau Beta Pi Faculty Advisor Director of Undergraduate Studies
+University of Kentucky Martin School of Public Policy, UK
+mike.johnson@uky.edu cory.curl@uky.edu
+(859) 257-0717 (859) 562-3182
+Dr. Ruiquan Huang
+Assistant Professor, Department of CS
+University of Kentucky
+ruiquanhuang@uky.edu
+(859) 257-3391
+2
