@@ -66,7 +66,7 @@ storage_ctx  = StorageContext.from_defaults(vector_store=vector_store)
 docs = []
 skipped = []
 
-for filename in sorted(os.listdir(DATA_DIR)):
+for i, filename in enumerate(sorted(os.listdir(DATA_DIR)), start=1):
     if not filename.endswith(".txt"):
         continue
     if filename in SKIP_FILES:
@@ -87,7 +87,7 @@ for filename in sorted(os.listdir(DATA_DIR)):
 
     docs.append(Document(
         text=content,
-        metadata={"title": filename, "keywords": keywords}
+        metadata={"title": f"Document {i}", "keywords": keywords}
     ))
     print(f"[LOAD] {filename}")
 
