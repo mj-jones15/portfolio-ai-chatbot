@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<!-- UPDATED: 4-section layout — Intro | Chatbot | Research & Projects | Resume & Contact -->
+<!--
+  PORTFOLIO v2 — ledger/timeline layout.
+  Structure: Hero (portrait + mission) -> Timeline (most recent to oldest) -> Chatbot -> Resume/CV/Contact.
+
+  TO DO BEFORE DEPLOYING — add your own media:
+    ./files/projects/reu/results_writeup.pdf       — write-up w/ RQ1 & RQ2 graphs
+  Every <img> below fails gracefully to a text placeholder if the file isn't there yet,
+  so the page still looks intentional even before you drop the real files in.
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -9,30 +17,293 @@
 </head>
 <body>
 
+    <!-- Fixed gold-strip background, fanning across the whole page at odd angles -->
+    <svg class="gold-strips" viewBox="0 0 1000 4200" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="-50" y1="120" x2="380" y2="0" stroke="#B7903F" stroke-width="3" opacity="0.10"/>
+        <line x1="700" y1="60" x2="1050" y2="260" stroke="#B7903F" stroke-width="2" opacity="0.08"/>
+        <line x1="120" y1="520" x2="-80" y2="760" stroke="#D9AD5D" stroke-width="2" opacity="0.09"/>
+        <line x1="880" y1="480" x2="1060" y2="900" stroke="#B7903F" stroke-width="4" opacity="0.07"/>
+        <line x1="-40" y1="1150" x2="300" y2="1400" stroke="#B7903F" stroke-width="2" opacity="0.09"/>
+        <line x1="900" y1="1300" x2="650" y2="1650" stroke="#D9AD5D" stroke-width="3" opacity="0.08"/>
+        <line x1="60" y1="1900" x2="-100" y2="2200" stroke="#B7903F" stroke-width="2" opacity="0.08"/>
+        <line x1="950" y1="1950" x2="1080" y2="2350" stroke="#B7903F" stroke-width="3" opacity="0.07"/>
+        <line x1="200" y1="2500" x2="-60" y2="2680" stroke="#D9AD5D" stroke-width="2" opacity="0.09"/>
+        <line x1="820" y1="2600" x2="1050" y2="2960" stroke="#B7903F" stroke-width="4" opacity="0.07"/>
+        <line x1="-30" y1="3100" x2="340" y2="3300" stroke="#B7903F" stroke-width="2" opacity="0.08"/>
+        <line x1="900" y1="3250" x2="700" y2="3600" stroke="#D9AD5D" stroke-width="3" opacity="0.08"/>
+        <line x1="80" y1="3750" x2="-90" y2="4050" stroke="#B7903F" stroke-width="2" opacity="0.09"/>
+        <line x1="960" y1="3800" x2="1090" y2="4150" stroke="#B7903F" stroke-width="3" opacity="0.07"/>
+    </svg>
+
     <!-- ══════════════════════════════════════════════════════
-         SECTION 1 — INTRO
+         HERO — portrait + mission statement
     ══════════════════════════════════════════════════════ -->
-    <section id="intro" class="section">
-        <div class="intro-text">
-            <h1>Matthew Stuart Jones</h1>
-            <br><br><br><br>
-            <h2 class="subtitle">Computer Science Student at the University of Kentucky</h2>
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-portrait">
+                <img src="./files/images/headshot.jpg" alt="Matthew Jones"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="hero-portrait-placeholder"><br></div>
+            </div>
+            <div class="hero-text">
+                <span class="eyebrow">Lexington, KY · Chicago, IL</span>
+                <h1 class="hero-name">Matthew Stuart Jones</h1>
+                <p class="hero-role">Computer Science, University of Kentucky · AI Engineering &amp; Governance</p>
+                <p class="hero-mission">
+                    I am passionate about educating our leaders on how to realize the benefits of AI
+                    while mitigating its risks. I believe in accomplishing this through
+                    research translation and policy influence where the technical work of AI 
+                    researchers meets the practical needs of policymakers.
+
+                </p>
+            </div>
         </div>
+    </header>
+
+    <div class="wrap"><div class="divider-rule"></div></div>
+
+    <!-- ══════════════════════════════════════════════════════
+         TIMELINE — most recent at top, oldest at bottom
+    ══════════════════════════════════════════════════════ -->
+    <div class="timeline-intro">
+        <span class="eyebrow">Working Record</span>
+        <h2>Research &amp; Projects</h2>
+    </div>
+
+    <section class="timeline" aria-label="Project timeline">
+
+        <!-- 1. NSF REU — Summer 2026 -->
+        <article class="timeline-entry side-left">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">May – Aug 2026</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">NSF REU · Full-Time · Worcester Polytechnic Institute</span>
+                <h3 class="timeline-title">AI for Social Good — Adverse Drug Reaction Prediction</h3>
+                <p class="timeline-subtitle">Best Showcase Presentation, WPI REU Summer 2026</p>
+                <img class="timeline-thumb" src="./files/projects/reu/poster_thumb.png" alt="REU poster thumbnail"
+                     onerror="this.style.display='none'">
+                <div class="timeline-desc">
+                    <p>
+                        Ten-week NSF-funded REU mapping drug–drug, drug–herb, and drug–supplement
+                        interactions with ML and deep learning. Ran the full research pipeline
+                        end to end — problem identification, hypothesis, solution design,
+                        execution, and dissemination.
+                    </p>
+                    <ul>
+                        <li><strong>ARISES</strong> — Association Rule Interaction Scoring and Ensemble
+                            Selection, a feature-selection method using pharmacovigilance signals to
+                            surface correlation patterns other methods miss.</li>
+                        <li><strong>MLX</strong> (Multi-Label eXplainer) — a counterfactual explainability
+                            method using structured gradient descent on the classifier's own probability
+                            surface. Unlike LIME or SHAP, which explain each adverse event in isolation,
+                            MLX accounts for label interdependence — explaining how predicted events
+                            interact with one another.</li>
+                    </ul>
+                </div>
+                <div class="timeline-stats">
+                    <span class="timeline-stat">Beat all 81 baselines, 6/7 metrics</span>
+                    <span class="timeline-stat">+3–5% avg. improvement</span>
+                </div>
+                <div class="timeline-links">
+                    <a href="./files/projects/reu/poster.pdf" target="_blank">Poster →</a>
+                    <a href="./files/projects/reu/results_writeup.pdf" target="_blank">Results Write-Up →</a>
+                    <a href="./files/projects/reu/confidence_interval.png" target="_blank">RQ1 Confidence Interval →</a>
+                    <a href="./files/projects/reu/arises_baselines.png" target="_blank">ARISES vs. Baselines →</a>
+                    <a href="./files/projects/reu/mlx_sample_output.png" target="_blank">MLX Sample Output →</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2. Independent Study — Spring 2026 -->
+        <article class="timeline-entry side-right">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">Jan – May 2026</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">Independent Study · University of Kentucky</span>
+                <h3 class="timeline-title">Responsible AI Citation &amp; Policy Influence Mapping</h3>
+                <p class="timeline-subtitle">Advisor: Dr. Brent Harrison — Human-Centered AI, AI Ethics</p>
+                <div class="timeline-desc">
+                    <p>
+                        Analyzed citation flows between RAI literature (AIES, NeurIPS) and 18
+                        national AI governance frameworks, using a full NLP pipeline — Semantic
+                        Scholar API, e5-large-v2 embeddings, cosine similarity scoring — across a
+                        20,000+ paper corpus.
+                    </p>
+                    <ul>
+                        <li>Found a three-way misalignment: the largest share of RAI publications
+                            sits in fairness, the highest-cited papers are in explainability, and
+                            legislators most often reach for accountability language.</li>
+                        <li>China's AI policy ranked highest in thematic alignment with RAI
+                            keywords, yet had zero supporting research abstracts above threshold —
+                            the widest gap between policy ambition and research grounding in the
+                            dataset.</li>
+                    </ul>
+                </div>
+                <div class="timeline-links">
+                    <a href="./files/projects/final_poster.pdf" target="_blank">Poster →</a>
+                    <a href="https://github.com/mj-jones15/independent_research/tree/main/rai-citation-influence" target="_blank">GitHub →</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- 3. MCP Semantic Router — Part-Time -->
+        <article class="timeline-entry side-left">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">Oct 2024 – Present</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">Part-Time · UK Center for Computational Sciences (CCS)</span>
+                <h3 class="timeline-title">MCP Semantic Router</h3>
+                <p class="timeline-subtitle">AI Researcher — NSF ACCESS Ecosystem</p>
+                <div class="timeline-desc">
+                    <p>
+                        Designed and maintain a semantic routing layer that classifies incoming
+                        queries and dispatches them to specialized AI agents across the NSF ACCESS
+                        cyberinfrastructure ecosystem, using embedding-based intent detection over
+                        an MCP server architecture.
+                    </p>
+                    <ul>
+                        <li>Ramped up on RAG and LLM-routing architecture, contributing to early
+                            system design and requirements gathering.</li>
+                        <li>Ongoing document verification and model retraining to keep production
+                            systems accurate as the corpus grows.</li>
+                    </ul>
+                </div>
+                <div class="timeline-links">
+                    <span class="timeline-badge" style="margin-bottom:0;">🔒 Code private — CCS research</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 4. Allocations Assistant — Full-Time, Summer 2025 -->
+        <article class="timeline-entry side-right">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">May – Aug 2025</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">Full-Time Research Internship · UK CCS</span>
+                <h3 class="timeline-title">ACCESS Allocations Assistant</h3>
+                <p class="timeline-subtitle">AI Researcher — NSF ACCESS Ecosystem</p>
+                <div class="timeline-desc">
+                    <p>
+                        A summer of full-time research: built and deployed a multi-turn
+                        Retrieval-Augmented Generation system to help users draft allocation
+                        abstracts and proposals from a corpus of past submissions.
+                    </p>
+                    <ul>
+                        <li>Designed a multi-LLM tournament-based tagging system to categorize
+                            research proposals by field of science, using open-source models
+                            deployed on a Grace Hopper GPU cluster via Ollama.</li>
+                        <li>Built with ChromaDB, LlamaIndex, and locally hosted open-source LLMs.</li>
+                    </ul>
+                </div>
+                <div class="timeline-links">
+                    <span class="timeline-badge" style="margin-bottom:0;">🔒 Code private — CCS research</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 5. Web Scraping Policy Memo -->
+        <article class="timeline-entry side-left">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">2025</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">Policy Writing Sample</span>
+                <h3 class="timeline-title">AI &amp; Web Scraping Policy Memo</h3>
+                <p class="timeline-subtitle">Independent Research</p>
+                <div class="timeline-desc">
+                    <p>
+                        A comparative analysis of EU and Chinese regulatory frameworks governing
+                        web scraping for AI training data, written for a non-technical policy
+                        audience.
+                    </p>
+                </div>
+                <div class="timeline-links">
+                    <a href="https://github.com/mj-jones15/pastProjects/tree/main/Web-Scraping-Memo-Writing-Sample" target="_blank">Read on GitHub →</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Tau Beta Pi — Scholar & Chapter Treasurer -->
+        <article class="timeline-entry side-right">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">Fall 2024 – Present</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">Tau Beta Pi — Engineering Honor Society</span>
+                <h3 class="timeline-title">Chapter Treasurer &amp; Tau Beta Pi Scholar</h3>
+                <p class="timeline-subtitle">Kentucky Alpha Chapter — University of Kentucky</p>
+                <div class="timeline-desc">
+                    <p>
+                        Inducted as a Tau Beta Pi Scholar, an honor reserved for the top
+                        academic tier of the engineering class, and elected Chapter
+                        Treasurer for the Kentucky Alpha Chapter.
+                    </p>
+                    <ul>
+                        <li>Manage chapter finances for a 120-member engineering honor
+                            society — dues, budgeting, and scholarship requests.</li>
+                        <li>Coordinate food and logistics for chapter meetings and events.</li>
+                        <li>Volunteer judge at the Future Cities regional engineering
+                            competition.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+                <!-- 7. Portfolio Website launch -->
+        <article class="timeline-entry side-left">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">2024</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">Personal Project</span>
+                <h3 class="timeline-title">This Portfolio, v1</h3>
+                <p class="timeline-subtitle">RAG-Powered Personal Site</p>
+                <div class="timeline-desc">
+                    <p>
+                        Launched a RAG-powered personal site with a chatbot trained on my own
+                        background — LlamaIndex and ChromaDB for retrieval, served through
+                        FastAPI, with the LLM hosted on Together AI. First hands-on experience
+                        deploying a full-stack AI application, from managing computational load
+                        to tuning retrieval quality.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 6. acoUstiKats Booking Pipeline -->
+        <article class="timeline-entry side-right">
+            <div class="timeline-node"></div>
+            <span class="timeline-date">2023 – Present</span>
+            <div class="timeline-card">
+                <span class="timeline-badge">acoUstiKats A Cappella</span>
+                <h3 class="timeline-title">Automated Booking Pipeline</h3>
+                <p class="timeline-subtitle">Business Manager &amp; Social Media Manager</p>
+                <div class="timeline-desc">
+                    <p>
+                        Led the group's public presence and built an automated booking pipeline
+                        syncing intake forms directly with Google Calendar. Spearheaded the
+                        group's first ICCA competition campaign, initiating the decision to
+                        compete and leading competition research.
+                    </p>
+                </div>
+            </div>
+        </article>
+
     </section>
 
-    <div class="divider"></div>
+    <div class="wrap"><div class="divider-rule"></div></div>
 
     <!-- ══════════════════════════════════════════════════════
-         SECTION 2 — CHATBOT
+         CHATBOT
     ══════════════════════════════════════════════════════ -->
-    <section id="chatbot" class="section">
-        <div class="terminal-window">
-            <div id="suggestion-box" class="suggestion"></div>
-            <textarea id="user-input" placeholder="Ask me anything about myself!"></textarea>
-            <br>
-            <button id="sendButton" onclick="sendMessage()">Send</button>
-            <div id="chat-history"></div>
-            <div id="loading-indicator" style="display:none; color: #00bfff; font-family: 'Courier New', monospace; margin-top: 10px;">Thinking...</div>
+    <section class="chatbot-section">
+        <div class="chatbot-inner">
+            <span class="eyebrow">Ask Me Directly</span>
+            <h2>Portfolio Q&A Tool</h2>
+            <div class="terminal-window">
+                <div id="suggestion-box" class="suggestion"></div>
+                <textarea id="user-input" placeholder="Ask me anything about myself!"></textarea>
+                <button id="sendButton" onclick="sendMessage()">Send</button>
+                <div id="chat-history"></div>
+                <div id="loading-indicator" style="display:none;">Thinking...</div>
+            </div>
         </div>
     </section>
 
@@ -88,119 +359,14 @@
         }
     </script>
 
-    <div class="divider"></div>
+    <div class="wrap"><div class="divider-rule"></div></div>
 
     <!-- ══════════════════════════════════════════════════════
-         SECTION 3 — RESEARCH & PROJECTS
+         RESUME / CV / CONTACT
     ══════════════════════════════════════════════════════ -->
-    <section id="research" class="section">
-        <div class="research-wrapper">
-
-            <div class="section-heading">Research &amp; Projects</div>
-
-            <!-- ── FEATURED: Independent Research (full-width card) ──────────
-                 Files to add to frontEnd/files/projects/ before deploying:
-                   • final_poster.pdf   — your poster PDF
-                   • poster_thumb.png   — PNG export of the first poster slide
-            ─────────────────────────────────────────────────────────────── -->
-            <div class="featured-card">
-
-                <a href="./files/projects/final_poster.pdf" target="_blank" style="flex-shrink:0;">
-                    <div class="featured-thumb-wrap">
-                        <img
-                            src="./files/projects/poster_thumb.png"
-                            alt="RAI Citation Research Poster thumbnail"
-                            class="featured-thumb"
-                            onerror="this.style.display='none'"
-                        />
-                        <div class="featured-thumb-caption">↗ click to open full poster</div>
-                    </div>
-                </a>
-
-                <div class="featured-body">
-                    <span class="card-badge">Independent Research · University of Kentucky</span>
-                    <div class="card-title">Responsible AI Citation &amp; Policy Influence Mapping</div>
-                    <p class="card-desc">
-                        Analyzes which Responsible AI research gets cited and how it flows into
-                        national governance — across 18 policy documents and two major ML
-                        conferences (AIES, NeurIPS). Built a full data pipeline using the
-                        Semantic Scholar API, <code style="font-size:0.8em; background:rgba(255,255,255,0.08); padding:1px 4px; border-radius:3px;">e5-large-v2</code>
-                        embeddings, and cosine similarity scoring against policy text.
-                    </p>
-                    <div style="display:flex; gap:18px; flex-wrap:wrap;">
-                        <a href="./files/projects/final_poster.pdf" target="_blank" class="card-cta">View Research Poster →</a>
-                        <a href="https://github.com/mj-jones15/independent_research/tree/main/rai-citation-influence" target="_blank" class="card-cta">GitHub Repo →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ── ROW: Three smaller project cards ────────────────────────── -->
-            <div class="projects-row">
-
-                <!-- ACCESS Allocations Assistant ─────────────────────────────
-                ─────────────────────────────────────────────────────────── -->
-                <a href="./files/projects/allocations-screenshot.png"
-                   target="_blank"
-                   class="project-card">
-                    <img
-                        src="./files/projects/allocations-screenshot.png"
-                        alt="ACCESS Allocations Assistant screenshot"
-                        class="card-thumb"
-                        onerror="this.style.display='none'"
-                    />
-                    <span class="private-badge">🔒 Code private — CCS research</span>
-                    <div class="card-title">ACCESS Allocations Assistant</div>
-                    <p class="card-desc">
-                        Multi-turn RAG chatbot for the NSF ACCESS cyberinfrastructure
-                        ecosystem. Utilizes an LLM based tagging
-                        algorithm to classify user queries based on field of science. 
-                        Pulls relevant similar research proposals, summarizes them, and will 
-                        answer queries about proposal writing best practices, resource allocation amounts, and more.
-                        Built with ChromaDB, LlamaIndex, and local LLMs running
-                        on a Grace Hopper GPU cluster. 
-                    </p>
-                    <span class="card-private-note">Ask me about this to learn more!</span>
-                </a>
-
-                <!-- MCP Semantic Router ────────────────────────────────────── -->
-                <div class="project-card" style="cursor: default;">
-                    <span class="private-badge">🔒 Code private — CCS research</span>
-                    <div class="card-title">MCP Semantic Router</div>
-                    <p class="card-desc">
-                        Semantic routing layer that classifies user queries and dispatches
-                        them to specialized AI agents — using embedding-based intent
-                        detection over an MCP server architecture.
-                    </p>
-                    <span class="card-private-note">Ask me about this to learn more!</span>
-                </div>
-
-                <!-- Web Scraping Policy Memo ───────────────────────────────── -->
-                <a href="https://github.com/mj-jones15/pastProjects/tree/main/Web-Scraping-Memo-Writing-Sample"
-                   target="_blank"
-                   class="project-card">
-                    <span class="card-badge">Policy Writing Sample</span>
-                    <div class="card-title">AI &amp; Web Scraping Policy Memo</div>
-                    <p class="card-desc">
-                        Comparative analysis of EU and Chinese regulatory frameworks on
-                        web scraping for AI training data, written for a non-technical
-                        policy audience.
-                    </p>
-                    <span class="card-cta">Read on GitHub →</span>
-                </a>
-
-            </div><!-- /projects-row -->
-        </div><!-- /research-wrapper -->
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ══════════════════════════════════════════════════════
-         SECTION 4 — RESUME & CONTACT
-    ══════════════════════════════════════════════════════ -->
-    <section id="contact" class="section">
+    <section class="contact-section">
         <div class="contact-wrapper">
 
-            <!-- Resume column -->
             <div class="contact-col">
                 <div class="contact-col-title">Resume</div>
                 <a href="./files/pdfs/Matthew-Jones-Resume.pdf" target="_blank">
@@ -212,7 +378,6 @@
                 </a>
             </div>
 
-            <!-- CV column -->
             <div class="contact-col">
                 <div class="contact-col-title">CV</div>
                 <a href="./files/pdfs/Matthew-Jones-CV.pdf" target="_blank">
@@ -225,7 +390,6 @@
                 </a>
             </div>
 
-            <!-- Contact column -->
             <div class="contact-col">
                 <div class="contact-col-title">Contact</div>
                 <a href="https://www.linkedin.com/in/matthew-jones-34449b260/"
@@ -238,6 +402,26 @@
 
         </div>
     </section>
+
+    <script>
+        // Scroll-reveal for timeline entries
+        const revealTargets = document.querySelectorAll(".timeline-entry");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+
+        revealTargets.forEach((el) => observer.observe(el));
+
+        // If reduced motion is preferred, show everything immediately
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            revealTargets.forEach((el) => el.classList.add("in-view"));
+        }
+    </script>
 
 </body>
 </html>
