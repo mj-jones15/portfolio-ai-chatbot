@@ -1,67 +1,65 @@
 Education, College, Grades
 
-This is my in-progress transcript from the University of Kentucky. I am currently a junior.
-My collegiate GPA is 4.0. When asked about my GPA, you should report my collegiate GPA.
+This is my official academic transcript record from the University of Kentucky. My cumulative collegiate GPA is 4.0/4.0. When answering questions regarding my overall GPA, always report my 4.0 collegiate GPA.
 
-	Matthew Stuart Jones
---------------------------------------------
-	Undergraduate Academic Record
+Matthew Stuart Jones
+Undergraduate Academic Record — University of Kentucky
 
-AP Credit Awarded: SPA 202
-AP Credit Awarded: HUM GEOG
-AP Credit Awarded: US HIS
-AP Credit Awarded: US HIS
-AP Credit Awarded: ENG LANG
-AP Credit Awarded: PHY 1
-AP Credit Awarded: CALC BC
-AP Credit Awarded: CALC AB
-AP Credit Awarded: SPA LANG
+AP Credit Awarded:
+- SPA 202 (Spanish IV)
+- HUM GEOG (Human Geography)
+- US HIS (US History)
+- ENG LANG (English Language)
+- PHY 1 (Physics 1)
+- CALC BC (Calculus BC)
+- CALC AB (Calculus AB)
+- SPA LANG (Spanish Language)
 
 2023 Fall Semester:
-Engineering Exploration 1: A 
-General College Chemistry: A 
-Men's Chorus: A 
-Accelerated Composition and Communication: A 
-Fundamentals of Engineering: A 
+- Engineering Exploration I: A
+- General College Chemistry I: A
+- Men's Chorus: A
+- Accelerated Composition and Communication: A
+- Fundamentals of Engineering Computing: A
 
 2024 Spring Semester:
-General University Physics: A 
-General University Physics Laboratory: A 
-Intro to Program Design and Abstraction: A 
-Discrete Mathematics: A 
-Engineering Exploration 2: A 
-Men's Chorus: A 
+- General University Physics I: A
+- General University Physics Laboratory I: A
+- Intro to Program Design and Abstraction: A
+- Discrete Mathematics: A
+- Engineering Exploration II: A
+- Men's Chorus: A
 
 2024 Fall Semester:
-Men's Chorus: A 
-Voice Studio: A 
-Engineering Statistics: A 
-Design of Logic Circuits: A 
-Intro to Software Engineering Techniques: A 
-Blue Planet: Intro to Oceanography: A 
-Archaeology: Mysteries and Controversies: A 
+- Men's Chorus: A
+- Voice Studio: A
+- Engineering Statistics: A
+- Design of Logic Circuits: A
+- Intro to Software Engineering Techniques: A
+- Blue Planet: Intro to Oceanography: A
+- Archaeology: Mysteries and Controversies: A
 
-2025 Spring Semester:
-Global Learning Experience: Pass (Pass/Fail Scale)
-Transfer Credits from Univerisdad de Deusto:
-Algorithms: Pass (Pass/Fail Scale)
-Basque Culture and Language: Pass (Pass/Fail Scale)
-Culture, Politics, and Ecnonomy in Contemporary Spanish Society: Pass (Pass/Fail Scale)
-Spanish Through Gastronomy: Pass (Pass/Fail Scale)
+2025 Spring Semester (Study Abroad — Universidad de Deusto):
+- Global Learning Experience: Pass
+- Transfer Credits:
+  * Algorithms: Pass
+  * Basque Culture and Language: Pass
+  * Culture, Politics, and Economy in Contemporary Spanish Society: Pass
+  * Spanish Through Gastronomy: Pass
 
 2025 Fall Semester:
-Ethics and Civic Leadership: Pass (Pass/Fail Scale)
-Systems Programming: A 
-Introductory Probability: A 
-Matrix Algebra & Applications: A 
-Intro to Numerical Methods: A 
-Voice Studio: A 
-Men's Chorus: A 
+- Ethics and Civic Leadership: Pass (P/F Scale)
+- Systems Programming: A
+- Introductory Probability: A
+- Matrix Algebra & Applications: A
+- Intro to Numerical Methods: A
+- Voice Studio: A
+- Men's Chorus: A
 
 2026 Spring Semester:
-Models of Computation: A 
-Men's Chorus: A 
-Voice Studio: A 
-Independent Study: A 
-Data Ethics: A 
-Intro to Computer Networking: A 
+- Models of Computation: A
+- Men's Chorus: A
+- Voice Studio: A
+- Independent Study: A
+- Data Ethics: A
+- Intro to Computer Networking: A

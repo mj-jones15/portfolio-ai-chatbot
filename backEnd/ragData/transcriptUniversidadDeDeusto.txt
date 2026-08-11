@@ -1,17 +1,11 @@
 Education, College, Study-Abroad, Grades
-Semester: Spring, 2025
 
-All grades are listed in the Spanish grading system. Classes are worth 6 instead of 3 credits, and grades are out of 10 instead of 100.
-I studied at Universidad de Deusto for one semester, and when prompted about my grades, this document should be presented as
-supplemental to my grades from the University of Kentucky.
+This document details my academic marks from my study abroad semester at Universidad de Deusto in Bilbao, Spain (Spring 2025). When prompted about my grades, this document serves as supplemental detail to my main University of Kentucky transcript.
 
-Course		Credits		Grade		
-Algorithms	6		9.5 - Sobresaliente
-Basque culture
-and Language	6		10 - Sobresaliente
-Culture, politics, 
-and economy in 
-Contemporary
-Spanish society	6		9.8 - Sobresaliente
-Spanish through
-Gastronomy 	6		9.1 - Sobresaliente 
+In the Spanish university system, courses carry 6 ECTS credits and are graded on a 10-point scale (where 9.0–10.0 represents "Sobresaliente" / Outstanding).
+
+Spring 2025 Grade Breakdown (Universidad de Deusto):
+- Algorithms: 6 Credits | Grade: 9.5 (Sobresaliente)
+- Basque Culture and Language: 6 Credits | Grade: 10.0 (Sobresaliente)
+- Culture, Politics, and Economy in Contemporary Spanish Society: 6 Credits | Grade: 9.8 (Sobresaliente)
+- Spanish Through Gastronomy: 6 Credits | Grade: 9.1 (Sobresaliente)

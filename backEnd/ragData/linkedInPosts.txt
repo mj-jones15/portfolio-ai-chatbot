@@ -1,33 +1,18 @@
 About-me, LinkedIn, Priority
 
-These are the LinkedIn posts I have made. Your tone should mirror the tone presented here.
+This document contains a compilation of my public LinkedIn updates, reflecting my voice, tone, and professional milestones across research, study abroad, and software engineering.
 
-After I returned home from studying abroad in Bilbao, Spain. June, 2025
-    Súper guay. The only words I have to describe my incredible experience the last few months as I studied abroad in Bilbao, Spain and traveled all around southern Europe.
+In June 2025, following my study abroad program in Bilbao, Spain, I shared:
+"Súper guay. The only words I have to describe my incredible experience the last few months as I studied abroad in Bilbao, Spain and traveled all around southern Europe. Thanks to Universidad de Deusto, immersive Spanish classes revolving around local Basque and Spanish culture allowed me to dive deep into Spanish history while their college of engineering kept me on track with my computer science degree. I especially appreciated the opportunity to learn about the Basque people and their traditions. This dynamic also gave me the opportunity to experience learning in a different culture, where classes are more hands-on rather than lecture-based. Likewise, Genoveva García-Gallardo and International Studies Abroad (ISA) were some of the best hosts ever, connecting me with an incredible host family and showing off everything that Bilbao has to offer. My host family helped me practice my Spanish to a near-fluent level, and the cultural experiences ranged from peace museums to beret factories, showing a side of Spain I may have struggled to find on my own. I am so fortunate to have had this opportunity, and look forward to the rest of my life with these newly improved skills of independence and perseverance."
 
-    Thanks to University of Deusto, immersive spanish classes revolving around local Basque and Spanish culture allowed me to dive deep into spanish history while their college of engineering kept me on track with my computer science degree. I especially appreciated the opportunity to learn about the Basque people and their traditions. This dynamic also gave me the opportunity to experience learning in a different culture, where classes are more hands on rather than lecture based. 
+Regarding the launch of my portfolio website, I shared:
+"I am excited to announce the launch of my RAG-powered portfolio website! On the site you can interact with my AI resume assistant, view my full resume, and explore a selection of past projects. Throughout this process, I've gained hands-on experience in deploying full-stack applications—from managing computational load to fine-tuning a Retrieval-Augmented Generation (RAG) system. It is built using an open-source Hugging Face vector database, powered by FastAPI, hosted on Render, with the LLM served via Together AI. This project reflects both my technical growth and passion for building AI tools with real-world utility."
 
-    Likewise, Genoveva García-Gallardo and International Studies Abroad (ISA) were some of the best hosts ever, connecting me with an incredible host family and showing off everything that Bilbao has to offer. My host family helped me practice my spanish to a near fluent level, and the cultural experiences ranged from peace museums to beret factories, showing a side of Spain I may have struggled to find on my own. I am so fortunate to have had this opportunity, and look forward to the rest of my life with these newly improved skills of independence and perseverance.
+On presenting my policy research at the University of Kentucky, I shared:
+"I am so pleased to have presented at the 20th annual University of Kentucky Showcase of Undergraduate Scholars. Thanks are in order to my advisor, Dr. Brent Harrison, for giving me the freedom to pursue a research question I genuinely care about: how AI policy is grounded in research that precedes it. Key findings: 1. China's AI policy ranked highest in thematic alignment with RAI keywords but had zero supporting research abstracts above the threshold. In my dataset, this was the largest gap between policy ambition and research grounding. 2. A three-way misalignment where the largest share of RAI publications are in fairness, the highest cited papers are in explainability, and legislators most often use accountability language. I am excited to continue this work and see where it leads!"
 
-I am excited to announce the launch of my RAG-powered portfolio website!
+Upon beginning my WPI REU summer program, I shared:
+"Excited to share that I'll be spending this summer at Worcester Polytechnic Institute as part of their NSF-funded REU program in Applied AI. Over ten weeks, I'll be researching AI challenges in areas like misinformation detection and societal impact—work that connects directly to my interests in how we can control how AI shapes the world around us. Huge thank you to Jessica Lusignan and the WPI team for this opportunity!"
 
-On the site you can:
-- Interact with my AI resume assistant 
-- View my full resume
-- Explore a selection of past projects
-
-Throughout this process, I've gained hands-on experience in deploying full-stack applications - from managing computational load to fine-tuning a Retrieval-Augmented Generation (RAG) system.
-
-It is built using an open-source Hugging Face vector database, powered by FastAPI, and hosted on Render, with the LLM served via Together AI.
-
-This project reflects both my technical growth and passion for building AI tools with real-world utility. I'd love for you to check it out!
-
-
-I am so pleased to have presented at the 20th annual University of Kentucky Showcase of Undergraduate Scholars. Thanks are in order to my advisor, Dr. Brent Harrison, for giving me the freedom to pursue a research question I genuinely care about: how AI policy is grounded in research that precedes it. 
-Key findings:
-1. China's AI policy ranked highest in thematic alignment with RAI keywords but had zero supporting research abstracts above the threshold. In my dataset, this was the largest gap between policy ambition and research grounding.
-2. A three-way misalignment where the largest share of RAI publications are in fairness, the highest cited papers are in explainability, and legislators most often use accountability language.
-I am excited to continue this work and see where it leads!
-
-
-Excited to share that I'll be spending this summer at Worcester Polytechnic Institute as part of their NSF-funded REU program in Applied AI. Over ten weeks, I'll be researching AI challenges in areas like misinformation detection and societal impact — work that connects directly to my interests in how we can control how AI shapes the world around us. Huge thank you to Jessica Lusignan and the WPI team for this opportunity! #MYREUWPI
+Reflecting on the conclusion of my WPI REU program in Summer 2026, I shared:
+"WPI REU Summer 2026! On top of such an exciting summer, my partner and I won best showcase presentation, and I think this is an exemplary culmination of the creative solutions, hard work, and attentive research in which we partook for two months. Through this process I’ll have completed a full project pipeline end-to-end: problem identification, hypothesis, solution design, execution, and dissemination. That’s exactly the kind of investigative rigor I want to bring into a Ph.D., and why I feel this opportunity uniquely positioned me as a qualified candidate for graduate school. To briefly review some of our work’s contributions, we implemented a novel feature selection method, Association Rule Interaction Scoring and Ensemble Selection (ARISES), which uses pharmacovigilance methods to identify and amplify correlation signals in the dataset. Our second contribution, which I designed and implemented, is Multi-Label eXplainer (MLX)—a novel explainability method that uses structured gradient descent on the classifier’s own probability surface to generate counterfactual explanations for combinations of labels, not just one at a time. Where methods like LIME or SHAP explain each adverse event in isolation, MLX explains how labels interact with each other in the model’s prediction. A huge thank you to the whole WPI team, including Professor Ben, our REU PI Elke Rundensteiner, and our program lead Jessica Lusignan. This was a wonderful summer where I learned a lot and grew equally as a human being through travel and new experiences around the Northeast!"

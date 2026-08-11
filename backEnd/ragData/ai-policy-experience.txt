@@ -1,8 +1,11 @@
 Education, College, Public-Policy, About-Me
 
-I do not have extensive formal experience with AI and policy, though I took PPL 306 at the University of Kentucky, Ethics and Civic Leadership, which provided
-me with the opportunity to work on a team which created AI policy recommendations for the Martin School at the University of Kentucky. I acted as a bridge between
-the technical knowledge and the creation of alternatives, conducting interviews with Computer Science and Policy faculty and students. I also prepared write-ups 
-about initiatives on AI both at UKy and across the country, and gave my team detailed explanations on the key information to know.
+My work sits at the intersection of machine learning, responsible AI research, and public policy, bridging the gap between complex technical AI concepts and actionable governance frameworks.
 
-In this class I individually wrote a policy memo on web scraping, which can be found linked on my website!
+Starting in September 2026, I will serve as a Technology Policy Fellow with the Alliance for Civic Engagement (ACE), where I will independently author two published AI policy memos analyzing pressing tech policy issues. 
+
+A central focus of my policy work is research-to-policy translation. Through an independent study advised by Dr. Brent Harrison at the University of Kentucky, I researched "The Translation Between Responsible AI Research and AI Legislation. I built an end-to-end NLP data pipeline analyzing a corpus of over 20,000 papers to map citation flows between top Responsible AI conferences (AIES, NeurIPS) and 18 national AI governance frameworks, identifying key misalignments between research output, citation impact, and policy language. I presented these findings at the 20th Annual UK Showcase of Undergraduate Scholars.
+
+I also engage in policy education, having served as a Guest Lecturer for HON 251 (Technology and the Human Experience) on "A Brief Overview of AI Policy. 
+
+My foundation in policy began in PPL 306 (Ethics and Civic Leadership) at the University of Kentucky, where I served as the technical bridge on a team developing AI policy recommendations for the Martin School of Public Policy. In this class, I conducted interviews across Computer Science and Policy faculties, synthesized national AI initiatives, and individually authored a policy memo on web scraping.
