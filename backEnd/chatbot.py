@@ -61,7 +61,7 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=MODEL_NAME)
 
 # Together AI Model
 Settings.llm = TogetherLLM(
-    model="openai/gpt-oss-20b",
+    model="Qwen/Qwen3.5-9B",
     api_key=os.environ["TOGETHER_API_KEY"],
     temperature=0.34,
 )
