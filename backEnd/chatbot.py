@@ -61,9 +61,11 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=MODEL_NAME)
 
 # Together AI Model
 Settings.llm = TogetherLLM(
-    model="Qwen/Qwen3.5-9B",
+    model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
     api_key=os.environ["TOGETHER_API_KEY"],
-    temperature=0.34,
+    temperature=0.3,
+    max_tokens=1024,
+    context_window=32768,
 )
 
 # ── Load pre-embedded vector store from disk ──────────────────────────────────
@@ -147,6 +149,7 @@ query_engine = RetrieverQueryEngine.from_args(
     retriever=retriever,
     node_postprocessors=[PriorityReranker()],
     text_qa_template=qa_template,
+    response_mode="compact",
 )
 
 # ── Helper ────────────────────────────────────────────────────────────────────
