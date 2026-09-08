@@ -61,7 +61,7 @@ Settings.embed_model = HuggingFaceEmbedding(model_name=MODEL_NAME)
 
 # Together AI Model
 Settings.llm = TogetherLLM(
-    model="meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    model="meta-llama/Llama-3.3-70B-Instruct-Turbo",
     api_key=os.environ["TOGETHER_API_KEY"],
     temperature=0.3,
     max_tokens=1024,
