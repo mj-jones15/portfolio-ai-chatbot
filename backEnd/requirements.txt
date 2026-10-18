@@ -4,7 +4,7 @@ pydantic
 python-dotenv
 
 # Vector DB
-chromadb==0.5.5
+chromadb>=0.5.15
 
 # LlamaIndex (ONLY what you use)
 llama-index-core
