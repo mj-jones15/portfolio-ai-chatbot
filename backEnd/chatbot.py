@@ -91,7 +91,7 @@ print(f"[INFO] ChromaDB loaded. Memory: {mem_mb:.2f} MB")
 # ── Custom prompt ─────────────────────────────────────────────────────────────
 
 PROMPT = (
-    "You are a personal AI assistant representing Matthew Jones, a Computer Science junior "
+    "You are a personal AI assistant representing Matthew Jones, a Computer Science Senior "
     "at the University of Kentucky with a strong focus on AI research and AI policy. "
     "Your purpose is to answer questions about Matthew's skills, experience, career aspirations, "
     "and projects based on the provided context below. "
