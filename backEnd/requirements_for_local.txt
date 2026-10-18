@@ -1,0 +1,30 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+pydantic
+python-dotenv
+
+# Vector DB
+chromadb>=0.5.5
+
+# LlamaIndex
+llama-index-core
+llama-index-vector-stores-chroma
+llama-index-embeddings-huggingface
+llama-index-llms-together
+
+# Embeddings (Unpinned/Upgraded for Python 3.13 wheel availability)
+sentence-transformers>=3.0.0
+huggingface-hub
+transformers>=4.45.0
+tokenizers>=0.20.0
+
+# System utils
+psutil
+aiohttp
+httpx
+
+# DB
+SQLAlchemy>=2.0
+psycopg[binary]>=3.1
+psycopg2-binary>=2.9
+together

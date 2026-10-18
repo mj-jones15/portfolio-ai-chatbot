@@ -4,19 +4,18 @@ pydantic
 python-dotenv
 
 # Vector DB
-chromadb>=0.5.5
+chromadb==0.5.5
 
-# LlamaIndex
+# LlamaIndex (ONLY what you use)
 llama-index-core
-llama-index-vector-stores-chroma
-llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma==0.1.10
+llama-index-embeddings-huggingface==0.2.2
 llama-index-llms-together
 
-# Embeddings (Unpinned/Upgraded for Python 3.13 wheel availability)
-sentence-transformers>=3.0.0
+# Embeddings
+sentence-transformers==2.7.0
 huggingface-hub
-transformers>=4.45.0
-tokenizers>=0.20.0
+transformers==4.41.2
 
 # System utils
 psutil
